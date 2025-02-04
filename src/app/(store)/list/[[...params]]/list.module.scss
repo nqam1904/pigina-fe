@@ -1,0 +1,268 @@
+@import "/public/css/variables.module.scss";
+
+.listPage {
+  margin-bottom: 60px;
+  margin-top: 146px;
+
+  >.header {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: nth($color-light, 2);
+
+    >h1 {
+      font-size: 2.4rem;
+      display: block;
+      font-weight: 300;
+      color: nth($color-light, 9);
+      margin-bottom: 12px;
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+
+      a {
+        font-size: 1.4rem;
+        color: nth($color-light, 6);
+
+        &:after {
+          content: "";
+          width: 4px;
+          height: 8px;
+          margin-left: 8px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-image: url("/images/icons/arrowIcon01.svg");
+        }
+
+        &:hover {
+          color: nth($color-light, 9);
+        }
+
+        &:last-child {
+          font-weight: 500;
+          color: nth($color-light, 9);
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    >.childrenContainer {
+      height: 30px;
+
+      .children {
+        display: flex;
+        gap: 12px;
+        border-radius: 6px;
+        margin-top: 8px;
+        padding: 4px 12px;
+        color: $black_12;
+        font-size: 1.4rem;
+
+        a {
+          color: nth($color-light, 7);
+
+          &:after {
+            content: "-";
+            width: 4px;
+            height: 8px;
+            margin-left: 8px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          &:hover {
+            color: nth($color-light, 9);
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .mobileFilter {
+    display: none;
+    width: 100%;
+    margin-top: 12px;
+    justify-content: flex-end;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+
+    .leftCol {
+      margin: 36px 0;
+    }
+
+    .rightCol {
+      flex-grow: 1;
+      margin: 12px;
+
+      .sortContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        padding: 12px;
+        justify-content: flex-end;
+      }
+
+      .listContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+.noItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  min-height: 400px;
+  gap: 16px;
+
+  >button {
+    width: 200px;
+  }
+}
+
+.sklList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 28px 0 0 8px;
+  margin-bottom: 400px;
+
+  >.item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .listPage {
+    .main {
+      .rightCol {
+        margin: 0 0 0 12px;
+
+        .listContainer {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .listPage {
+    .mobileFilter {
+      display: flex;
+    }
+
+    .main {
+      padding-top: 8px;
+
+      .rightCol {
+        width: 100%;
+        margin: 0;
+
+        .sortContainer {
+          display: none;
+        }
+
+        .listContainer {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .listPage {
+    >.header {
+      height: auto;
+      padding: 20px 10px;
+      margin-top: 130px;
+
+      >.childrenContainer {
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 100%;
+
+        .children {
+          width: max-content;
+
+          a {
+            color: nth($color-light, 7);
+
+            &:after {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+
+    .main {
+      padding-top: 12px;
+
+      .rightCol {
+        .listContainer {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .listPage {
+    margin-top: 124px;
+  }
+}
+
+@media (max-width: 320px) {
+  .listPage {
+    .main {
+      .rightCol {
+        .listContainer {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+.childrenContainer::-webkit-scrollbar {
+  display: none;
+}

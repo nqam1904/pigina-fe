@@ -1,0 +1,9 @@
+@import "/public/css/variables.module.scss";
+
+.container_side {
+    position: fixed !important;
+    top: 64px !important;
+    left: 0 !important;
+    border-right: 1px solid #f1f1f1 !important;
+    height: 100vh !important;
+}

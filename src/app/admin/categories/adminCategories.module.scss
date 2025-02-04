@@ -1,0 +1,49 @@
+@import "/public/css/variables.module.scss";
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  >h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: $black_17;
+  }
+
+  >.head {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  >.collapes_container {
+    background-color: $white !important;
+  }
+
+  >.dataTable {
+    margin-top: 24px;
+  }
+
+  .catLevel1 {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid nth($color-light, 2);
+  }
+
+  .catLevel2 {
+    margin-left: 24px;
+  }
+
+  .catLevel3 {
+    margin-left: 24px;
+  }
+
+  .loading {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

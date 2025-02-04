@@ -1,0 +1,94 @@
+@import "/public/css/variables.module.scss";
+
+.homeSection {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.cardsWrapper {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.sectionHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    a {
+        font-weight: 500;
+        color: nth($color-light, 8);
+        padding-right: 24px;
+        background-image: url("/images/icons/arrowIcon02.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            padding-right: 22px;
+        }
+
+        &:active {
+            color: nth($color-light, 10);
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        color: nth($color-light, 10);
+    }
+}
+
+@media (min-width: 1440px) {
+    .sectionHeader {
+        a {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .cardsWrapper {
+        overflow-y: auto;
+        padding-bottom: 10px;
+    }
+
+    .sectionHeader {
+        a {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cardsWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+    .sectionHeader {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
