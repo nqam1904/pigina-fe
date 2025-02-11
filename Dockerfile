@@ -31,13 +31,9 @@ WORKDIR /app
 # Copy only the necessary files from the builder stage
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/next.config.js ./
-COPY --from=builder /app/prisma ./
 COPY --from=builder /app/.next/standalone ./.next/standalone
 COPY --from=builder /app/.next/static ./.next/standalone/.next/static
 COPY --from=builder /app/public ./.next/standalone/public
-
-# Fix missing sharp in production
-ENV NEXT_SHARP_PATH=/app/.next/stadalone/node_modules/sharp
 
 # Expose the port the app runs on
 EXPOSE 3000
