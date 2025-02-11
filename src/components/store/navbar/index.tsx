@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 
+import { listHeader } from "@/mocks";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -32,29 +33,42 @@ const StoreNavBar = () => {
     }
   }, []);
 
+  const renderLink = () => {
+    return listHeader.map((item, index) => {
+      return (
+        <li key={index}>
+          <Link href={item.link}>{item.title}</Link>
+
+          {item.subMenu && (
+            <ul className={styles.subMenu}>
+              {item.subMenu.map((sub) => (
+                <li key={sub.id}>
+                  <Link href={sub.link}>{sub.title}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      );
+    });
+  };
+
   return (
     <nav className={`${styles.navbar} ${hideNavbar && styles.hideNavbar}`}>
       <section>
-        <div className={`${styles.top} storeContainer`}>
+        <div className={`${styles.top}`}>
           <Link href={"/"}>
             <Image
-              alt="Logo"
+              alt="logo"
               src={"/images/logo.png"}
-              width={173}
-              height={64}
+              width={165}
+              height={63}
               quality={100}
               priority
               className={styles.logo}
             />
           </Link>
-        </div>
-      </section>
-      <section>
-        <div className={`storeContainer ${styles.ribbon}`}>
-          <div className={styles.left}>
-            {/* <NavBarCategory isNavbarVisible={!hideNavbar} /> */}
-            <hr />
-          </div>
+          <ul>{renderLink()}</ul>
         </div>
       </section>
     </nav>

@@ -143,10 +143,12 @@ $red_10: #fef4f4;
 $red_11: #fef8f8;
 $transparent: #00000030;
 $white: #FFFFFF;
+$primary: #ca41bc;
 
 :export {
   transparent: $transparent;
   white: $white;
+  primary: $primary;
   black_01: $black_01;
   black_02: $black_02;
   black_03: $black_03;

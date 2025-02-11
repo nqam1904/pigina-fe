@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./footer.module.scss";
@@ -84,20 +83,6 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <div className={styles.responsiveIframe}>
-              <Link
-                href={"https://maps.app.goo.gl/wfKmSRhyNEkwhfWPA"}
-                target="_blank"
-              >
-                <Image
-                  alt="Laptop Logo"
-                  src={imageMap}
-                  fill
-                  sizes="(max-width:240px)"
-                  style={{ objectFit: "cover" }}
-                />
-              </Link>
-            </div>
           </div>
         </section>
       </div>

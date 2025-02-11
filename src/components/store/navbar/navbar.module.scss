@@ -4,16 +4,21 @@
   display: flex;
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: $white;
   flex-direction: column;
   border-bottom: 1px solid $black_06;
   z-index: 9;
   width: 100%;
   transition: all 0.6s;
+  box-shadow: 0 2px 4px rgba(black, 0.2);
 
   .top {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1170px;
+    padding: 20px 15px;
+    margin: 0 auto;
 
     a {
       display: inline-block;
@@ -25,52 +30,74 @@
         object-fit: cover;
       }
     }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+
+        a {
+          color: $primary;
+          font-size: 16px;
+          line-height: 1.7em;
+          transition: color 0.3s ease;
+          font-weight: 400;
+          letter-spacing: 0px;
+
+          &:hover {
+            color: $pink_05;
+            cursor: pointer;
+          }
+        }
+
+        .iconArrow {
+          margin-left: 5px;
+          font-size: .65em;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          color: $pink_05;
+        }
+
+        .subMenu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: $white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px 0;
+
+          li {
+            padding: 5px 15px;
+            white-space: nowrap;
+
+            a {
+              color: $primary;
+              ;
+
+              &:hover {
+                color: $pink_05;
+                ;
+              }
+            }
+          }
+        }
+
+        &:hover .subMenu {
+          display: block;
+        }
+      }
+    }
   }
-
-
 
   section {
     width: 100%;
-  }
-
-  >section:nth-child(1) {
-    padding: 16px 0;
-    border-bottom: 1px solid $black_06;
-  }
-
-  .left {
-    display: flex;
-    height: 100%;
-
-    hr {
-      height: 16px;
-      margin-top: 10px;
-      border-left: 1px solid $black_06;
-    }
-  }
-
-  .right {
-    .deal {
-      gap: 8px;
-      margin-right: 16px;
-      // color: nth($color-red, 3);
-    }
-  }
-
-  .rightButtons {
-    display: none;
-  }
-
-
-
-  .ribbon {
-    height: 50px;
-    padding: 8px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.4rem;
-    user-select: none;
   }
 }
 
@@ -79,28 +106,10 @@
 }
 
 @media (max-width: 1280px) {
-  .navbar {
-    .ribbon {
-      padding: 8px 24px;
-    }
-  }
+  .navbar {}
 }
 
-@media (max-width: 1024px) {
-  .ribbon {
-    .left {
-      .topCategories {
-        display: none;
-      }
-
-      hr {
-        display: none;
-      }
-    }
-  }
-
-
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
   .navbar {
@@ -113,20 +122,6 @@
         }
       }
     }
-
-    .ribbon {
-      padding: 8px 16px;
-    }
-
-    .rightButtons {
-
-      >img {
-        width: 24px;
-        height: 24px;
-        object-fit: cover;
-        margin-right: 16px;
-      }
-    }
   }
 }
 
@@ -134,31 +129,6 @@
   .navbar {
     >section:nth-child(1) {
       padding: 12px 0;
-    }
-
-    .search {
-      display: none;
-    }
-
-    .rightButtons {
-      display: inline-block;
-
-      >img {
-        width: 24px;
-        height: 24px;
-        object-fit: cover;
-        margin-right: 16px;
-      }
-    }
-
-    .ribbon {
-      padding: 8px 8px;
-
-      .right {
-        .pcConfig {
-          display: none;
-        }
-      }
     }
   }
 }
