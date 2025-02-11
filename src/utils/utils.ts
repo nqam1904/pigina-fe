@@ -1,6 +1,4 @@
-import { TCategory } from "@/types/categories";
 import { format, isThisYear, isToday, isYesterday } from "date-fns";
-// const bcrypt = require("bcryptjs");
 
 function generateRandomString(length: number) {
   const charset =
@@ -99,28 +97,13 @@ const transformDataSpecifications = (data: any[] = []) => {
   }, {});
 };
 
-const findCategoryUrl = (category: TCategory[], categoryId: string) => {
-  const findCategory = category?.find((cate) => cate.id === categoryId);
-
-  if (!findCategory) return null;
-
-  const findCateParent = category?.find(
-    (parent) => parent.id === findCategory.parentID,
-  );
-
-  return findCateParent
-    ? `${findCateParent.url}/${findCategory.url}`
-    : findCategory.url;
-};
-
 export {
   calculateDiscount,
+  capitalizeFirstLetter,
   convertListToDropdownList,
-  findCategoryUrl,
+  formatDate,
   formatDateTime,
   generateRandomString,
   isEmptyObject,
   transformDataSpecifications,
-  formatDate,
-  capitalizeFirstLetter,
 };

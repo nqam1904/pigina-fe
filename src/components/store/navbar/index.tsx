@@ -5,7 +5,6 @@ import styles from "./navbar.module.scss";
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import NavBarCategory from "./navCategory";
 
 const StoreNavBar = () => {
   const route = useRouter();
@@ -53,7 +52,7 @@ const StoreNavBar = () => {
       <section>
         <div className={`storeContainer ${styles.ribbon}`}>
           <div className={styles.left}>
-            <NavBarCategory isNavbarVisible={!hideNavbar} />
+            {/* <NavBarCategory isNavbarVisible={!hideNavbar} /> */}
             <hr />
           </div>
         </div>

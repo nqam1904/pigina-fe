@@ -2,7 +2,7 @@
 
 .homePage {
   width: 100%;
-  background-color: nth($color-light, 1);
+  // background-color: nth($color-light, 1);
 
   .heroContainer {
     display: flex;
@@ -41,7 +41,7 @@
       text-align: center;
       font-size: 2.5rem;
       font-weight: 500;
-      color: nth($color-light, 10);
+      // color: nth($color-light, 10);
     }
 
     >div {
@@ -59,9 +59,9 @@
 
     a {
       font-weight: 500;
-      color: nth($color-light, 8);
+      // color: nth($color-light, 8);
       padding-right: 24px;
-      background-image: url("/images/icons/arrowIcon02.svg");
+      // background-image: url("/images/icons/arrowIcon02.svg");
       background-repeat: no-repeat;
       background-position: right center;
       transition: all 0.2s ease-out;
@@ -71,13 +71,13 @@
       }
 
       &:active {
-        color: nth($color-light, 10);
+        // color: nth($color-light, 10);
       }
     }
 
     h2 {
       font-weight: 500;
-      color: nth($color-light, 10);
+      // color: nth($color-light, 10);
     }
   }
 }

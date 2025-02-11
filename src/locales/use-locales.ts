@@ -1,17 +1,13 @@
-'use client';
+"use client";
 
-import dayjs from 'dayjs';
-import { useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 
-import { useRouter } from 'src/routes/hooks';
+import { allLangs } from "./all-langs";
+import { fallbackLng, changeLangMessages as messages } from "./config-locales";
 
-import { toast } from 'src/components/snackbar';
-
-import { allLangs } from './all-langs';
-import { fallbackLng, changeLangMessages as messages } from './config-locales';
-
-import type { LanguageValue } from './config-locales';
+import { useRouter } from "next/navigation";
+import type { LanguageValue } from "./config-locales";
 
 // ----------------------------------------------------------------------
 
@@ -22,7 +18,9 @@ export function useTranslate(ns?: string) {
 
   const fallback = allLangs.filter((lang) => lang.value === fallbackLng)[0];
 
-  const currentLang = allLangs.find((lang) => lang.value === i18n.resolvedLanguage);
+  const currentLang = allLangs.find(
+    (lang) => lang.value === i18n.resolvedLanguage,
+  );
 
   const onChangeLang = useCallback(
     async (newLang: LanguageValue) => {
@@ -31,22 +29,21 @@ export function useTranslate(ns?: string) {
 
         const currentMessages = messages[newLang] || messages.en;
 
-        toast.promise(langChangePromise, {
-          loading: currentMessages.loading,
-          success: () => currentMessages.success,
-          error: currentMessages.error,
-        });
+        // toast.promise(langChangePromise, {
+        //   loading: currentMessages.loading,
+        //   success: () => currentMessages.success,
+        //   error: currentMessages.error,
+        // });
 
-        if (currentLang) {
-          dayjs.locale(currentLang.adapterLocale);
-        }
+        // if (currentLang) {
+        // }
 
         router.refresh();
       } catch (error) {
         console.error(error);
       }
     },
-    [currentLang, i18n, router]
+    [currentLang, i18n, router],
   );
 
   return {

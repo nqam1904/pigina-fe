@@ -1,8 +1,3 @@
-import {
-  FacebookIcon,
-  InstagramIcon,
-  XIcon,
-} from "@/components/icons/svgIcons";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -113,15 +108,9 @@ const Footer = () => {
           <div className={styles.social}>
             <Link
               href={"https://www.facebook.com/profile.php?id=100085920692236"}
-            >
-              <FacebookIcon width={20} strokeWidth={0} />
-            </Link>
-            <Link href={"https://www.twitter.com"}>
-              <XIcon width={20} />
-            </Link>
-            <Link href={"https://www.instagram.com"}>
-              <InstagramIcon width={20} strokeWidth={0} />
-            </Link>
+            ></Link>
+            <Link href={"https://www.twitter.com"}></Link>
+            <Link href={"https://www.instagram.com"}></Link>
           </div>
         </div>
       </section>
