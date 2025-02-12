@@ -1,10 +1,11 @@
+import Icon from "@/components/UI/icon";
+import { listHeader } from "@/mocks";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./footer.module.scss";
 
-const imageMap =
-  "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1737862971/GGmaps_x2oojy.jpg";
-const Footer = () => {
+const Footer: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -14,91 +15,104 @@ const Footer = () => {
     setIsMobile(mobile);
   }, []);
 
+  const renderLink = () => {
+    return listHeader.map((item, index) => {
+      return (
+        <li key={index}>
+          <Link href={item.link}>{item.title}</Link>
+          {item.subMenu ? (
+            <Icon
+              src="/images/icons/ic_arr_down.png"
+              width={16}
+              height={16}
+              className={styles.iconArrow}
+            />
+          ) : null}
+          {item.subMenu ? (
+            <ul className={styles.subMenu}>
+              {item.subMenu.map((sub) => (
+                <li key={sub.id}>
+                  <Link href={sub.link}>{sub.title}</Link>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </li>
+      );
+    });
+  };
+
   return (
-    <footer className={styles.storeFooter}>
-      <div className={`${styles.footerWrapper} storeContainer`}>
-        <div className={styles.topSection}></div>
-        <section className={styles.middle}>
-          <div>
-            <h3>Điện thoại hỗ trợ:</h3>
-            <span>Đặt câu hỏi và tư vấn? Gọi chúng tôi</span>
-            <span>
-              Gọi mua:{" "}
-              {isMobile ? (
-                <Link style={{ color: "#007aff" }} href="tel:036 4561756">
-                  036 4561756
-                </Link>
-              ) : (
-                "036 4561756"
-              )}{" "}
-              (9:00 - 21:30)
-            </span>
-            <span>
-              Khiếu nại:{" "}
-              {isMobile ? (
-                <Link style={{ color: "#007aff" }} href="tel:036 456175">
-                  036 456175
-                </Link>
-              ) : (
-                "036 456175"
-              )}{" "}
-              (10:00 - 21:30)
-            </span>
-            <span>
-              Bảo hành:{" "}
-              {isMobile ? (
-                <Link style={{ color: "#007aff" }} href="tel:036 456175">
-                  036 456175
-                </Link>
-              ) : (
-                "036 456175"
-              )}{" "}
-              (10:00 - 21:00)
-            </span>
-          </div>
-
-          <div>
-            <h3>Thông tin khác:</h3>
-            <ul>
-              <li>
-                <Link href={""}>Dịch Vụ vệ sinh laptop</Link>
-              </li>
-              <li>
-                <Link href={""}>Tìm hiểu về mua trả góp</Link>
-              </li>
-              <li>
-                <Link href={""}>Chính sách bảo hành</Link>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.contact}>
-            <h3>Địa chỉ</h3>
-            <ul>
-              <li>
-                <Link
-                  href={"https://maps.app.goo.gl/wfKmSRhyNEkwhfWPA"}
-                  target="_blank"
-                >
-                  126E Đ. Phan Đăng Lưu, P3, Q.Phú Nhuận, TP.HCM
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <section className={styles.bottom}>
-        <div className={`${styles.footerWrapper} storeContainer`}>
-          <span>© 2024 Laptop Lap4All Store.</span>
-
-          <div className={styles.social}>
-            <Link
-              href={"https://www.facebook.com/profile.php?id=100085920692236"}
-            ></Link>
-            <Link href={"https://www.twitter.com"}></Link>
-            <Link href={"https://www.instagram.com"}></Link>
-          </div>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.headFooter}>
+          <Image src="/images/logo.png" alt="logo" width={276} height={86} />
+          <ul>{renderLink()}</ul>
         </div>
-      </section>
+
+        {/* Social Icons */}
+        <div className={styles.socialIcons}>
+          <Link href="https://facebook.com" target="_blank">
+            <Image
+              src="/images/icons/facebook-icon.png"
+              alt="Facebook"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <Link href="https://youtube.com" target="_blank">
+            <Image
+              src="/images/icons/youtube-icon.png"
+              alt="YouTube"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <Link href="https://instagram.com" target="_blank">
+            <Image
+              src="/images/icons/instagram-icon.png"
+              alt="Instagram"
+              width={30}
+              height={30}
+            />
+          </Link>
+        </div>
+
+        {/* Policies */}
+        <div className={styles.policies}>
+          <Link href="/cam-ket-ban-hang">Cam kết bán hàng</Link> |{" "}
+          <Link href="/chinh-sach-bao-mat">Chính sách bảo mật</Link> |{" "}
+          <Link href="/chinh-sach-van-chuyen">Chính sách vận chuyển</Link> |{" "}
+          <Link href="/chinh-sach-doi-tra">
+            Chính sách đổi trả và hoàn tiền
+          </Link>
+        </div>
+
+        {/* Company Info */}
+        <div className={styles.companyInfo}>
+          <strong>CÔNG TY TNHH THƯƠNG MẠI QUỐC TẾ BẢO UYÊN LINH</strong>
+          <p>
+            Địa chỉ: Số I5-TT10, Khu đô thị sinh thái Xuân Phương, Phường Xuân
+            Phương, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam.
+          </p>
+          <p>Số điện thoại: +84.969662280</p>
+          <p>Giấy chứng nhận đăng ký doanh nghiệp số: 0109039277</p>
+          <p>
+            Do sở kế hoạch và đầu tư TP. Hà Nội cấp lần đầu ngày 03/01/2020,
+            đăng ký thay đổi ngày 10/07/2020.
+          </p>
+        </div>
+
+        {/* Certification */}
+        <div className={styles.certification}>
+          <Image
+            src="/images/bo-cong-thuong.png"
+            alt="Bộ Công Thương"
+            width={100}
+            height={40}
+          />
+        </div>
+      </div>
     </footer>
   );
 };

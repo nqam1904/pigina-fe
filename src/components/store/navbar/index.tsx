@@ -1,14 +1,14 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 
+import Icon from "@/components/UI/icon";
 import { listHeader } from "@/mocks";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const StoreNavBar = () => {
-  const route = useRouter();
   const [hideNavbar, setHideNavbar] = useState(false);
 
   useEffect(() => {
@@ -38,8 +38,15 @@ const StoreNavBar = () => {
       return (
         <li key={index}>
           <Link href={item.link}>{item.title}</Link>
-
-          {item.subMenu && (
+          {item.subMenu ? (
+            <Icon
+              src="/images/icons/ic_arr_down.png"
+              width={16}
+              height={16}
+              className={styles.iconArrow}
+            />
+          ) : null}
+          {item.subMenu ? (
             <ul className={styles.subMenu}>
               {item.subMenu.map((sub) => (
                 <li key={sub.id}>
@@ -47,7 +54,7 @@ const StoreNavBar = () => {
                 </li>
               ))}
             </ul>
-          )}
+          ) : null}
         </li>
       );
     });
@@ -56,7 +63,7 @@ const StoreNavBar = () => {
   return (
     <nav className={`${styles.navbar} ${hideNavbar && styles.hideNavbar}`}>
       <section>
-        <div className={`${styles.top}`}>
+        <div className={styles.top}>
           <Link href={"/"}>
             <Image
               alt="logo"
