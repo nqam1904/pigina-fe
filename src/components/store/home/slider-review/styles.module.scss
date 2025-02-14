@@ -1,44 +1,58 @@
+@import "/public/css/variables.module.scss";
+
 .container {
-    height: auto;
-    margin: 24px 0;
-    padding: 24px 0;
-    gap: 30px;
+  height: auto;
+  margin: 24px 0;
+  padding-bottom: 24px;
 
-    .item {
-        text-align: center;
-        padding: 20px;
-        border: 1px solid black;
-        border-radius: 20px;
-        width: 300px;
-        height: 250px;
-        gap: 20px;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
+  .item {
+    border-radius: 8px;
+    width: 300px;
+    height: 200;
+    border: 1px solid $black_06;
+
+    .headerItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: $violet_07;
+      padding: 16px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      .avatar {
+        border-radius: 50%;
+        align-self: flex-start;
+      }
+      .rightHeader {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        >img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-top: 15px;
-        }
+        text-align: left;
+        flex-direction: column;
+        margin-left: 16px;
 
         .name {
-            margin-bottom: 2px;
-            color: #8c52ff;
+          color: $black_17;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 4px;
         }
 
         .occupation {
-            font-style: italic;
-            margin-top: 2px;
+          color: $black_12;
+          font-size: 14px;
+          font-style: italic;
         }
-
+      }
     }
 
-
+    .bodyItem {
+      width: 100%;
+      padding: 16px;
+      .testimonial {
+        font-size: 16px;
+        color: $black_17;
+        line-height: 1.4;
+      }
+    }
+  }
 }

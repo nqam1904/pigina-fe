@@ -59,7 +59,6 @@
 
         .iconArrow {
           margin-left: 5px;
-
         }
 
         .subMenu {
@@ -81,7 +80,6 @@
 
               &:hover {
                 color: $pink_05;
-                ;
               }
             }
           }
@@ -101,4 +99,40 @@
 
 .hideNavbar {
   top: -180px;
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    // .top {
+    //   a {
+    //     .logo {
+    //       width: 120px !important;
+    //       height: inherit !important;
+    //       object-fit: contain;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    // > img {
+    //   width: 24px;
+    //   height: 24px;
+    //   object-fit: cover;
+    //   margin-right: 16px;
+    // }
+    .top {
+      ul {
+        display: none;
+      }
+    }
+  }
 }
