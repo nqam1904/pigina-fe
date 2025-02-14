@@ -1,3 +1,4 @@
+import { ApiFakeResponse } from "@/types";
 import { format, isThisYear, isToday, isYesterday } from "date-fns";
 
 function generateRandomString(length: number) {
@@ -59,16 +60,6 @@ const convertListToDropdownList = (list: any[]): any[] => {
   return dropDownData;
 };
 
-const calculateDiscount = (price: number, salePrice: number = 0) => {
-  if (price > 0 && salePrice > 0 && salePrice < price) {
-    const discountAmount = price - salePrice;
-    const discountPercentage = (discountAmount / price) * 100;
-    return parseFloat(discountPercentage.toFixed(2));
-  } else {
-    return 0;
-  }
-};
-
 function formatDateTime(date: string | Date = new Date()) {
   if (isToday(new Date(date))) {
     return format(new Date(date), "HH:mm");
@@ -88,22 +79,32 @@ function formatDateTime(date: string | Date = new Date()) {
 const formatDate = (date: string | Date = new Date()) =>
   format(new Date(date), "HH:mm dd/MM/yyyy");
 
-const transformDataSpecifications = (data: any[] = []) => {
-  return data.reduce((acc: any, group: any) => {
-    group.specs.forEach((spec: any) => {
-      acc[`${spec.name}`] = spec.value;
-    });
-    return acc;
-  }, {});
+const fakeApiCall = (
+  dataArray: any[] = [],
+  shouldSucceed = true,
+  delay = 2000
+): Promise<ApiFakeResponse> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldSucceed) {
+        resolve({ status: "success", data: dataArray }); // Resolve with the array
+      } else {
+        reject({
+          status: "error",
+          message: "API call failed!",
+          data: dataArray,
+        }); // Reject with the array
+      }
+    }, delay);
+  });
 };
 
 export {
-  calculateDiscount,
   capitalizeFirstLetter,
   convertListToDropdownList,
   formatDate,
   formatDateTime,
   generateRandomString,
   isEmptyObject,
-  transformDataSpecifications,
+  fakeApiCall,
 };

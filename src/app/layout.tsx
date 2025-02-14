@@ -1,8 +1,11 @@
+import "./globals.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { CONFIG } from "@/config-global";
 import { detectLanguage } from "@/locales/server";
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
-import "./globals.scss";
 
 export const viewport: Viewport = {
   width: "device-width",
