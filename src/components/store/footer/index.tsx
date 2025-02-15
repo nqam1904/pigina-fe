@@ -1,5 +1,3 @@
-import Icon from "@/components/UI/icon";
-import { listHeader } from "@/mocks";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -14,33 +12,6 @@ const Footer: React.FC = () => {
     const mobile = /iPhone|iPad|iPod|Android/i.test(userAgent);
     setIsMobile(mobile);
   }, []);
-
-  const renderLink = () => {
-    return listHeader.map((item, index) => {
-      return (
-        <li key={index}>
-          <Link href={item.link}>{item.title}</Link>
-          {item.subMenu ? (
-            <Icon
-              src="/images/icons/ic_arr_down.png"
-              width={16}
-              height={16}
-              className={styles.iconArrow}
-            />
-          ) : null}
-          {item.subMenu ? (
-            <ul className={styles.subMenu}>
-              {item.subMenu.map((sub) => (
-                <li key={sub.id}>
-                  <Link href={sub.link}>{sub.title}</Link>
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </li>
-      );
-    });
-  };
 
   return (
     <footer className={styles.footer}>
@@ -75,7 +46,6 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-        <ul>{renderLink()}</ul>
       </div>
 
       {/* Policies */}

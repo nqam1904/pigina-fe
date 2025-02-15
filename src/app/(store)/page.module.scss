@@ -17,3 +17,9 @@
     margin-bottom: 16px;
   }
 }
+@media (max-width: 768px) {
+  .thumbnailContainer {
+    height: auto;
+    flex-direction: column;
+  }
+}

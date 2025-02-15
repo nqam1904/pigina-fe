@@ -13,66 +13,6 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    ul {
-      display: flex;
-      align-self: flex-start;
-      gap: 20px;
-      padding: 0;
-      margin-left: 60px;
-      margin-bottom: 40px;
-
-      li {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        a {
-          color: $primary;
-          font-size: 18px;
-          line-height: 1.7em;
-          transition: color 0.3s ease;
-          font-weight: 400;
-          letter-spacing: 0px;
-
-          &:hover {
-            color: $pink_05;
-            cursor: pointer;
-          }
-        }
-
-        .iconArrow {
-          margin-left: 5px;
-        }
-
-        .subMenu {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          background: $white;
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          padding: 10px 0;
-
-          li {
-            padding: 5px 15px;
-            white-space: nowrap;
-
-            a {
-              color: $primary;
-              font-size: 16px;
-
-              &:hover {
-                color: $pink_05;
-              }
-            }
-          }
-        }
-
-        &:hover .subMenu {
-          display: block;
-        }
-      }
-    }
     .socialIcons {
       display: flex;
       gap: 15px;
@@ -145,32 +85,13 @@
         justify-content: center;
         align-items: center;
       }
-      ul {
-        display: flex;
-        gap: 20px;
-        padding: 12px;
-        margin: 0;
-
-        li {
-          position: relative;
-          display: flex;
-          align-items: center;
-
-          a {
-            color: $primary;
-            font-size: 16px;
-            line-height: 1.4em;
-          }
-        }
-      }
     }
     .policies {
-      margin: 20px auto;
       display: flex;
       flex-wrap: wrap;
       a {
         color: $black_17;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }

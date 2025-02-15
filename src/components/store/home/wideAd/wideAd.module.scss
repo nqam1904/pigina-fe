@@ -8,11 +8,12 @@
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 12px;
-
+  border-radius: 4px;
+  background-color: rgba(#000000, 0.3);
   span,
   h3,
   a {
@@ -27,7 +28,7 @@
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     display: block;
   }
@@ -61,22 +62,12 @@
 
 @media (max-width: 768px) {
   .wideAd {
-    height: 160px;
-    // background-color: red;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-
-    span {
-      margin-top: 30px;
-    }
-
+    margin: 0;
     h3 {
-      margin-bottom: 40px;
-      font-size: 12px;
+      font-size: 2rem;
     }
     a {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
