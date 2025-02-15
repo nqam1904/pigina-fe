@@ -1,8 +1,10 @@
 "use client";
 
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import styles from "./page.module.scss";
 
 const Page = () => {
+  useScrollToTop();
   return (
     <div className={`${styles.container} storeContainer`}>
       <h1>Cam kết bán hàng</h1>
