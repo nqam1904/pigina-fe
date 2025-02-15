@@ -1,5 +1,6 @@
 "use client";
 
+import ComingSoon from "@/components/store/coming-soon";
 import { dataPolicy } from "@/mocks/footer";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -16,7 +17,11 @@ const Page = () => {
 
   return (
     <div className={`${styles.container} storeContainer`}>
-      <div dangerouslySetInnerHTML={{ __html: data }} />
+      {data ? (
+        <div dangerouslySetInnerHTML={{ __html: data }} />
+      ) : (
+        <ComingSoon />
+      )}
     </div>
   );
 };

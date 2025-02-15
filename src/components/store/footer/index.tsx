@@ -106,8 +106,8 @@ const Footer: React.FC = () => {
         <Image
           src="/images/bo-cong-thuong.png"
           alt="Bộ Công Thương"
-          width={100}
-          height={40}
+          width={150}
+          height={57}
         />
       </div>
     </footer>
