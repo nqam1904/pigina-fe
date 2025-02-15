@@ -156,7 +156,7 @@ export const MenuIcon = ({ width, fill }: IProps) => {
       <path
         fill="none"
         stroke="#ca41bc"
-        stroke-width="2"
+        strokeWidth="2"
         d="M2 19h20M2 5h20M2 12h20"
       />
     ),

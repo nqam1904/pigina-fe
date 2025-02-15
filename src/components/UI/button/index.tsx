@@ -6,6 +6,8 @@ interface IProps {
   type?: "button" | "reset" | "submit";
   disabled?: boolean;
   onClick?: () => void;
+  backgroundColor?: string;
+  borderColor?: string;
 }
 
 const Button: React.FC<IProps> = ({
@@ -13,6 +15,8 @@ const Button: React.FC<IProps> = ({
   onClick,
   type = "button",
   disabled = false,
+  backgroundColor = "",
+  borderColor = "",
 }) => {
   return (
     <button
@@ -20,6 +24,7 @@ const Button: React.FC<IProps> = ({
       type={type}
       className={styles.button}
       onClick={onClick}
+      style={{ backgroundColor, borderColor }}
     >
       {text}
     </button>

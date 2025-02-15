@@ -1,23 +1,16 @@
-import "./globals.scss";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "./globals.scss";
 
+import ProgressBar from "@/components/UI/progress-bar";
 import { CONFIG } from "@/config-global";
 import { detectLanguage } from "@/locales/server";
 import type { Metadata, Viewport } from "next";
-import { Roboto } from "next/font/google";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
-
-const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Pigina Korea",
@@ -39,8 +32,9 @@ export default async function RootLayout({
   const lang = CONFIG.isStaticExport ? "en" : await detectLanguage();
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body suppressHydrationWarning className={roboto.className}>
+      <body suppressHydrationWarning>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
+        <ProgressBar />
         {children}
         {/* </I18nProvider> */}
       </body>

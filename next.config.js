@@ -18,8 +18,11 @@ const nextConfig = {
   ...(isStaticExport === 'true' && {
     output: 'export',
   }),
-  webpack: (config) => {
+  webpack: (config, { dev }) => {
     config.resolve.alias['slick-carousel'] = path.resolve(__dirname, 'node_modules/slick-carousel');
+    if (dev) {
+      config.resolve.alias['react-refresh/runtime'] = path.resolve('noop');
+    }
     return config;
   },
 };

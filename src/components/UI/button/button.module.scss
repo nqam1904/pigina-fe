@@ -1,17 +1,21 @@
 @import "/public/css/variables.module.scss";
 
 .button {
-  line-height: 0.9;
-  height: 30px;
+  display: flex; // Enables flexbox
+  align-items: center; // Centers text vertically
+  justify-content: center; // Centers text horizontally
+  height: 50px; // Adjust height as needed
   min-width: 64px;
-  padding: 8px 22px;
+  padding: 10px 22px; // Adjust padding for better alignment
   border-radius: 8px;
   border: 1px solid $pink_05;
   color: $white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   background-color: $pink_05;
   transition: background-color 0.3s;
   user-select: none;
+  text-align: center; // Ensures text is centered inside button
+  
   &:hover {
     background-color: $pink_06;
   }

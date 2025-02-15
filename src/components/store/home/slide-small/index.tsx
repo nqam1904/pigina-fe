@@ -1,6 +1,7 @@
 "use client";
 
 import WideAd from "@/components/store/home/wideAd";
+import Button from "@/components/UI/button";
 import { SK_Box } from "@/components/UI/skeleton";
 import { dataThumbnail } from "@/mocks";
 import { fakeApiCall } from "@/utils/utils";
@@ -33,12 +34,15 @@ const SlideSmallContainer = () => {
     <React.Fragment>
       {data.map((item, index) => {
         return (
-          <WideAd
-            key={index}
-            imgUrl={item.url}
-            title={item.title}
-            url={item.link}
-          />
+          <>
+            <WideAd
+              key={index}
+              imgUrl={item.url}
+              title={item.title}
+              url={item.link}
+            />
+            
+          </>
         );
       })}
     </React.Fragment>

@@ -7,7 +7,6 @@ const StoreLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main>
       <StoreNavBar />
-      <ProgressBar />
       {children}
       <Footer />
     </main>

@@ -20,17 +20,11 @@ const dataThumbnail = [
   {
     id: 0,
     url: "/images/thumbnail_1.png",
-    title: "Sản phẩm dành cho bạn",
+    title: "Sản phẩm dành cho nàng",
     linkText: "Xem chi tiết",
   },
   {
     id: 1,
-    url: "/images/thumbnail_2.png",
-    title: "Sản phẩm dành cho bé",
-    linkText: "Xem chi tiết",
-  },
-  {
-    id: 2,
     url: "/images/thumbnail_2.png",
     title: "Sản phẩm dành cho bé",
     linkText: "Xem chi tiết",

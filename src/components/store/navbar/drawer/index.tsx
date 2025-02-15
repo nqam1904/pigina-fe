@@ -13,8 +13,6 @@ interface IProps {
 const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
   const [show, setShow] = useState(false);
 
-  const toggleSubMenu = () => {};
-
   const renderLink = () => {
     return listHeader.map((item, index) => {
       ``;
@@ -29,7 +27,6 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
                 className={styles.arrow}
                 onClick={(e: React.MouseEvent) => {
                   e.preventDefault();
-                  toggleSubMenu();
                   setShow(!show);
                 }}
               >
@@ -46,7 +43,9 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
             <ul className={styles.subMenu}>
               {item.subMenu.map((sub) => (
                 <li key={sub.id}>
-                  <Link href={sub.link}>{sub.title}</Link>
+                  <Link href={sub.link} onClick={handleOnClose}>
+                    {sub.title}
+                  </Link>
                 </li>
               ))}
             </ul>

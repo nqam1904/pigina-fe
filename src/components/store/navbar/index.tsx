@@ -36,8 +36,8 @@ const StoreNavBar = () => {
     }
   }, []);
 
-  const handleVisibility = () => {
-    isActive
+  const handleVisibility = (isVisible: boolean) => {
+    isVisible
       ? document.documentElement.classList.add("noScroll")
       : document.documentElement.classList.remove("noScroll");
     setIsActive(false);
@@ -95,7 +95,7 @@ const StoreNavBar = () => {
           </div>
         </div>
       </section>
-      <Drawer isVisible={isActive} handleOnClose={() => handleVisibility()} />
+      <Drawer isVisible={isActive} handleOnClose={() => handleVisibility(false)} />
     </nav>
   );
 };
