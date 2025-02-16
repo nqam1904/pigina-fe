@@ -7,7 +7,7 @@
   .heroContainer {
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 95px;
   }
 
   .thumbnailContainer {
@@ -20,19 +20,43 @@
       flex-direction: column;
       align-items: center;
       gap: 8px;
+      .imageBanner {
+        width: 100%;
+        height: 600px;
+      }
+    }
+  }
+
+  .reviewContainer {
+    margin: 80px 0;
+    padding: 24px;
+    background-color: $pink_09;
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: $black_12;
+      margin-bottom: 16px;
+      text-align: center;
     }
   }
 }
+
 @media (max-width: 768px) {
   .thumbnailContainer {
     height: auto;
     flex-direction: column;
     .wraperBanner {
       padding: 0 16px;
-      > img {
+      .imageBanner {
         width: 700px;
         object-fit: contain;
       }
+    }
+  }
+  .reviewContainer {
+    padding: 12px 0 !important;
+    h2 {
+      font-size: 1.5rem;
     }
   }
 }
@@ -40,9 +64,9 @@
 @media (max-width: 480px) {
   .thumbnailContainer {
     .wraperBanner {
-      > img {
+      .imageBanner {
         width: 400px;
-        height: 300px;
+        height: 300px !important;
         object-fit: contain;
       }
     }
@@ -51,9 +75,9 @@
 @media (max-width: 380px) {
   .thumbnailContainer {
     .wraperBanner {
-      > img {
+      .imageBanner {
         width: 350px;
-        height: 300px;
+        height: 300px !important;
         object-fit: contain;
       }
     }

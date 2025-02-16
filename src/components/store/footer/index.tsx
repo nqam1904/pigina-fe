@@ -46,8 +46,8 @@ const Footer: React.FC = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29793.265423749035!2d105.744049!3d21.026356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134548454d7698b%3A0x5109177b4ad9d65f!2zS2h1IMSRw7QgdGjhu4sgU2luaCBUaMOhaSBYdcOibiBQaMawxqFuZw!5e0!3m2!1sen!2sus!4v1739635649822!5m2!1sen!2sus"
               allowFullScreen={true}
-              width="400"
-              height="300"
+              width="500"
+              height="200"
               style={{ border: 0 }}
               referrerPolicy="no-referrer-when-downgrade"
               loading="lazy"

@@ -7,23 +7,22 @@
 
   .item {
     border-radius: 8px;
-    width: 300px;
-    height: 200;
     border: 1px solid $black_06;
-
+    background-color: $white;
+    height: 300px;
+    overflow: hidden;
     .headerItem {
       display: flex;
       flex-direction: row;
       align-items: center;
-      background-color: $violet_07;
       padding: 16px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      position: relative;
 
       .avatar {
         border-radius: 50%;
         align-self: flex-start;
       }
+
       .rightHeader {
         display: flex;
         text-align: left;
@@ -32,26 +31,35 @@
 
         .name {
           color: $black_17;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
           margin-bottom: 4px;
         }
 
         .occupation {
           color: $black_12;
-          font-size: 14px;
+          font-size: 16px;
           font-style: italic;
         }
+      }
+
+      .icFace {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
       }
     }
 
     .bodyItem {
       width: 100%;
       padding: 16px;
+      border-top: 1px solid $black_06;
       .testimonial {
-        font-size: 16px;
-        color: $black_17;
+        font-size: 18px;
+        color: $black_16;
         line-height: 1.4;
+        font-style: oblique;
       }
     }
   }

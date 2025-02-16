@@ -21,9 +21,11 @@ const Home = () => {
           <Image
             src={"/images/thumbnail_1.png"}
             alt="image"
-            width={900}
-            height={600}
+            width={0}
+            height={0}
+            sizes="100vw"
             priority
+            className={styles.imageBanner}
           />
           <Button text="Sản phẩm dành cho nàng" />
         </div>
@@ -31,9 +33,11 @@ const Home = () => {
           <Image
             src={"/images/thumbnail_2.png"}
             alt="image"
-            width={900}
-            height={600}
+            width={0}
+            height={0}
+            sizes="100vw"
             priority
+            className={styles.imageBanner}
           />
           <Button
             text="Sản phẩm dành cho bé"
@@ -42,7 +46,10 @@ const Home = () => {
           />
         </div>
       </div>
-      <SliderReview />
+      <div className={styles.reviewContainer}>
+        <h2>Cảm nhận khách hàng</h2>
+        <SliderReview />
+      </div>
     </div>
   );
 };

@@ -109,7 +109,7 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                   index === activeSlideNum && styles.active
                 }`}
               >
-                <h2>{slide.title}</h2>
+                {/* <h2>{slide.title}</h2> */}
                 {/* {slide.msg.desc && <span>{slide.msg.desc}</span>} */}
                 {/* <Link href={slide.url}>{slide.msg.buttonText}</Link> */}
               </div>

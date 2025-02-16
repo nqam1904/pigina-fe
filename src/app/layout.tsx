@@ -6,6 +6,32 @@ import ProgressBar from "@/components/UI/progress-bar";
 import { CONFIG } from "@/config-global";
 import { detectLanguage } from "@/locales/server";
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
+
+const myFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Helvetica.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Helvetica-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+    {
+      path: "../../public/fonts/MierA-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+    {
+      path: "../../public/fonts/MierA-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -31,7 +57,7 @@ export default async function RootLayout({
 }) {
   const lang = CONFIG.isStaticExport ? "en" : await detectLanguage();
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning className={myFont.className}>
       <body suppressHydrationWarning>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />
