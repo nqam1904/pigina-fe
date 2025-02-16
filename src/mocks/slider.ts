@@ -20,14 +20,24 @@ const dataThumbnail = [
   {
     id: 0,
     url: "/images/thumbnail_1.png",
-    title: "Sản phẩm dành cho nàng",
-    linkText: "Xem chi tiết",
+    title:
+      "YEARS OF SEEKING THE PERFECT SUPPLEMENT LED ME TO CREATE MY OWN HEALTH SOLUTION.",
+    author: "Kourtney Kardashian Barker, Founder",
+    description: "Lemme introduce you to the upgrade you can feel.",
+    button: "Sản phẩm dành cho nàng",
+    backgroundColor: "",
+    borderColor: "",
   },
   {
     id: 1,
+    title:
+      "YEARS OF SEEKING THE PERFECT SUPPLEMENT LED ME TO CREATE MY OWN HEALTH SOLUTION.",
+    author: "Kourtney Kardashian Barker, Founder",
+    description: "Lemme introduce you to the upgrade you can feel.",
     url: "/images/thumbnail_2.png",
-    title: "Sản phẩm dành cho bé",
-    linkText: "Xem chi tiết",
+    button: "Sản phẩm dành cho bé",
+    backgroundColor: "#ffe066",
+    borderColor: "#ffe066",
   },
 ];
 
