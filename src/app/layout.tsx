@@ -31,6 +31,7 @@ const myFont = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-mier-a",
 });
 
 export const viewport: Viewport = {
@@ -57,7 +58,7 @@ export default async function RootLayout({
 }) {
   const lang = CONFIG.isStaticExport ? "en" : await detectLanguage();
   return (
-    <html lang={lang} suppressHydrationWarning className={myFont.className}>
+    <html lang={lang} suppressHydrationWarning className={`${myFont.variable}`}>
       <body suppressHydrationWarning>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />

@@ -6,9 +6,6 @@ const isStaticExport = 'false';
 const nextConfig = {
   reactStrictMode: false,
   trailingSlash: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
   images: {
     minimumCacheTTL: 60,
   },
@@ -18,11 +15,9 @@ const nextConfig = {
   ...(isStaticExport === 'true' && {
     output: 'export',
   }),
-  webpack: (config, { dev }) => {
+  webpack: (config) => {
     config.resolve.alias['slick-carousel'] = path.resolve(__dirname, 'node_modules/slick-carousel');
-    if (dev) {
-      config.resolve.alias['react-refresh/runtime'] = path.resolve('noop');
-    }
+
     return config;
   },
 };

@@ -60,7 +60,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Mier A", "Helvetica", sans-serif;
+  font-family: var(--font-mier-a), "Helvetica", sans-serif;
 }
 
 a {
@@ -88,6 +88,14 @@ a {
 }
 .slick-slide {
   padding: 0 15px;
+  height: inherit !important;
+  & > div {
+    height: 100% !important;
+  }
+}
+
+.slick-track {
+  display: flex !important;
 }
 
 .slick-arrow.slick-prev,

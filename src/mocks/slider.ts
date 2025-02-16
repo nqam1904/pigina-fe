@@ -68,7 +68,7 @@ const dataReview = [
     id: 3,
     image: "/images/customer_4.jpg",
     name: "Chị Hồng Trang",
-    rating: 5,
+    rating: 4,
     age: 35,
     occupation: "HLV thể thao",
     social: "https://facebook.com",

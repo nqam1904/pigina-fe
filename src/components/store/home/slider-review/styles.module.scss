@@ -1,7 +1,6 @@
 @import "/public/css/variables.module.scss";
 
 .container {
-  height: auto;
   margin: 24px 0;
   padding-bottom: 24px;
 
@@ -9,8 +8,8 @@
     border-radius: 8px;
     border: 1px solid $black_06;
     background-color: $white;
-    height: 300px;
     overflow: hidden;
+    height: 100%;
     .headerItem {
       display: flex;
       flex-direction: row;
@@ -37,6 +36,7 @@
         }
 
         .occupation {
+          margin-top: 4px;
           color: $black_12;
           font-size: 16px;
           font-style: italic;

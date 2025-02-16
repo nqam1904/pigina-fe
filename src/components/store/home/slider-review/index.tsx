@@ -1,5 +1,6 @@
 "use client";
 
+import Rating from "@/components/UI/rating";
 import { dataReview } from "@/mocks";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,7 @@ const SliderReview: React.FC = () => {
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 4000,
-    speed: 1500,
+    speed: 500,
     dots: true,
     arrows: false,
     responsive: [
@@ -57,13 +58,16 @@ const SliderReview: React.FC = () => {
             <Image
               src={item.image}
               alt="avatar"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className={styles.avatar}
             />
             <div className={styles.rightHeader}>
               <span className={styles.name}>{item.name}</span>
-              <span className={styles.occupation}>{item.occupation}</span>
+              <Rating rating={item.rating} />
+              <span className={styles.occupation}>
+                {`${item.age} tuổi - ${item.occupation}`}
+              </span>
             </div>
             <Link className={styles.icFace} href={item.social} target="_blank">
               <Image
