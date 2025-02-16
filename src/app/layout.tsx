@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./globals.scss";
+import localFont from "next/font/local";
 
 import ProgressBar from "@/components/UI/progress-bar";
 import { CONFIG } from "@/config-global";
@@ -24,6 +25,22 @@ export const metadata: Metadata = {
   ],
 };
 
+const MierA = localFont({
+  src: [
+    {
+      path: "./MierA-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./MierA-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-mier-a",
+});
+
 export default async function RootLayout({
   children,
 }: {
@@ -32,7 +49,7 @@ export default async function RootLayout({
   const lang = CONFIG.isStaticExport ? "en" : await detectLanguage();
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${MierA.variable}`}>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />
         {children}
