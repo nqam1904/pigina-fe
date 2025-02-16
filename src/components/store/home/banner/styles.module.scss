@@ -1,0 +1,83 @@
+@import "/public/css/variables.module.scss";
+.wraperBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4e1f3;
+  border-radius: 32px;
+  margin: 24px;
+  border: 1px solid black;
+
+  .textContent {
+    width: 50%;
+    padding: 24px;
+    h1 {
+      font-size: 34px;
+      color: $black_17;
+      margin-bottom: 16px;
+    }
+    .author {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $black_12;
+      margin-bottom: 16px;
+    }
+    .description {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  }
+  .imageBanner {
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+    aspect-ratio: 600/500;
+  }
+}
+@media (max-width: 1024px) {
+  .wraperBanner {
+    .textContent {
+      width: 100%;
+      h1 {
+        font-size: 24px !important;
+      }
+      .author {
+        font-size: 12px !important;
+      }
+      .description {
+        font-size: 16px !important;
+      }
+    }
+    .imageBanner {
+      width: 100% !important;
+      height: 100% !important;
+      aspect-ratio: 600/500;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wraperBanner {
+    padding: 0 16px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    .textContent {
+      & > button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wraperBanner {
+    margin: 16px !important;
+    padding-bottom: 18px;
+    .textContent {
+      padding: 16px 8px !important;
+    }
+  }
+}

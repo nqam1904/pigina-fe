@@ -44,7 +44,6 @@ const StoreNavBar = () => {
   };
   const renderLink = () => {
     return listHeader.map((item, index) => {
-      ``;
       return (
         <li key={index}>
           <Link href={item.link}>{item.title}</Link>
@@ -95,7 +94,10 @@ const StoreNavBar = () => {
           </div>
         </div>
       </section>
-      <Drawer isVisible={isActive} handleOnClose={() => handleVisibility(false)} />
+      <Drawer
+        isVisible={isActive}
+        handleOnClose={() => handleVisibility(false)}
+      />
     </nav>
   );
 };
