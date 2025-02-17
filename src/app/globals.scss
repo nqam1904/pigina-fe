@@ -26,7 +26,32 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Mier A";
+  src: url("/fonts/MierA-Regular.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: "Volte";
+//   src: url("/fonts/Volte-Bold.otf") format(".otf");
+//   font-weight: 700;
+//   font-style: bold;
+// }
 
+// @font-face {
+//   font-family: "Volte";
+//   src: url("/fonts/Volte-Regular.otf") format(".otf");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Volte";
+//   src: url("/fonts/Volte-Medium.otf") format(".otf");
+//   font-weight: 500;
+//   font-style: normal;
+// }
 ::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -97,11 +122,45 @@ a {
 .slick-track {
   display: flex !important;
 }
-
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   display: none;
 }
+// .slick-next {
+//   background-image: url(../../public/images/next.png);
+//   background-repeat: no-repeat;
+//   right: -25px;
+//   position: absolute;
+//   z-index: 2;
+//   text-indent: -9999px;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 100%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   border: 0;
+// }
+// .slick-next:hover {
+//   opacity: 0.75 !important;
+// }
+// .slick-prev {
+//   background-image: url(../../public/images/prev.png);
+//   background-repeat: no-repeat;
+//   left: -25px;
+//   position: absolute;
+//   z-index: 2;
+//   text-indent: -9999px;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 100%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   border: 0;
+// }
 
 @media (min-width: 1440px) {
   .storeContainer {

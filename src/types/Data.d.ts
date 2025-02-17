@@ -4,6 +4,6 @@ export type DataBlogs = {
   thumbnail: string;
   slug: string;
   shortDes: string;
-  descirption: string;
+  description: string;
   author: string;
 };

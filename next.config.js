@@ -8,6 +8,20 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     minimumCacheTTL: 60,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i0.wp.com',
+        port: '',
+        pathname: '/**',
+      },
+
+    ],
   },
   env: {
     BUILD_STATIC_EXPORT: isStaticExport,

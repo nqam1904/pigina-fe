@@ -14,6 +14,7 @@ const Input: React.FC<InputProps> = ({
   onChange,
   label,
   textarea = false,
+  ...rest
 }) => {
   const Component = textarea ? "textarea" : "input";
   return (
@@ -21,11 +22,11 @@ const Input: React.FC<InputProps> = ({
       <Component
         type="text"
         id="name"
-        placeholder=" "
         required
         value={value}
         className={styles.inputCore}
         onChange={onChange}
+        {...rest}
       />
       <label htmlFor="name" className={styles.labelCore}>
         {label}

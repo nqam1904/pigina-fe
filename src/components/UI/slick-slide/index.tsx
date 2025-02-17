@@ -7,18 +7,18 @@ type SlickSlideProps = {
   setting?: any;
   children: string | JSX.Element | JSX.Element[] | (() => JSX.Element);
 };
-const SliderReview: React.FC<SlickSlideProps> = ({ setting, children }) => {
+const SlickSlider: React.FC<SlickSlideProps> = ({ setting, children }) => {
   const settings = {
     className: "center",
     infinite: true,
-    centerPadding: "60px",
     slidesToShow: 3,
     slidesToScroll: 3,
+    centerPadding: "60px",
     autoplay: true,
     autoplaySpeed: 4000,
     speed: 500,
     dots: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -57,4 +57,4 @@ const SliderReview: React.FC<SlickSlideProps> = ({ setting, children }) => {
   );
 };
 
-export default SliderReview;
+export default SlickSlider;
