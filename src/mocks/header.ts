@@ -30,11 +30,16 @@ const listHeader = [
   },
   {
     id: 2,
+    title: "Tin tức",
+    link: "/blogs",
+  },
+  {
+    id: 3,
     title: "Liên hệ",
     link: "/lien-he",
   },
   {
-    id: 3,
+    id: 4,
     title: "Giới thiệu",
     link: "/gioi-thieu",
   },

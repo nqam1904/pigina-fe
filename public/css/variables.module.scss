@@ -154,13 +154,15 @@ $red_09: #fee8ea;
 $red_10: #fef4f4;
 $red_11: #fef8f8;
 $transparent: #00000030;
-$white: #FFFFFF;
+$white: #ffffff;
 $primary: #ca41bc;
+$text_title: #61549e;
 
 :export {
   transparent: $transparent;
   white: $white;
   primary: $primary;
+  text_title: $text_title;
   black_01: $black_01;
   black_02: $black_02;
   black_03: $black_03;

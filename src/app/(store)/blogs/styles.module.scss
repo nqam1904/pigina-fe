@@ -1,0 +1,22 @@
+@import "/public/css/variables.module.scss";
+
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+  .news {
+    max-width: 1270px;
+    .titleNews {
+      text-align: center;
+      font-weight: 600;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: $text_title;
+      margin: 20px 0 45px;
+      line-height: 1.25;
+    }
+  }
+}
