@@ -1,57 +1,52 @@
 @import "/public/css/variables.module.scss";
 
-@font-face {
-  font-family: "Mier A";
-  src: url("/fonts/MierA-Regular.ttf") format(".ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mier A";
-  src: url("/fonts/MierA-Bold.ttf") format(".ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica.ttf") format(".ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica-Bold.ttf") format(".ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mier A";
-  src: url("/fonts/MierA-Regular.ttf") format(".ttf");
-  font-weight: 400;
-  font-style: normal;
-}
 // @font-face {
-//   font-family: "Volte";
-//   src: url("/fonts/Volte-Bold.otf") format(".otf");
+//   font-family: "Mier A";
+//   src: url("/fonts/MierA-Regular.ttf") format(".ttf");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Mier A";
+//   src: url("/fonts/MierA-Bold.ttf") format(".ttf");
 //   font-weight: 700;
-//   font-style: bold;
+//   font-style: normal;
 // }
 
 // @font-face {
-//   font-family: "Volte";
-//   src: url("/fonts/Volte-Regular.otf") format(".otf");
+//   font-family: "Helvetica";
+//   src: url("/fonts/Helvetica.ttf") format(".ttf");
 //   font-weight: 400;
 //   font-style: normal;
 // }
 
 // @font-face {
-//   font-family: "Volte";
-//   src: url("/fonts/Volte-Medium.otf") format(".otf");
-//   font-weight: 500;
+//   font-family: "Helvetica";
+//   src: url("/fonts/Helvetica-Bold.ttf") format(".ttf");
+//   font-weight: 700;
 //   font-style: normal;
 // }
+
+@font-face {
+  font-family: "SFProText";
+  src: url("/fonts/SFProText-Bold.ttf") format(".ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("/fonts/SFProText-Regular.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("/fonts/SFProText-Medium.ttf") format(".ttf");
+  font-weight: 500;
+  font-style: normal;
+}
 ::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -85,7 +80,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: var(--font-mier-a), "Helvetica", sans-serif;
+  font-family: var(--font-SFProText), "SFProText", sans-serif;
 }
 
 a {

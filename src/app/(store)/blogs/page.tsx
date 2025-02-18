@@ -44,10 +44,16 @@ const BlogsPage = () => {
       <div className={styles.section2}>
         <div className={styles.containerSection}>
           <h2 className={styles.titleSection2}>
-            LACTOBACT INTIMA <br /> CHUYÊN GIA MEN VI SINH PHỤ NỮ TỪ ĐỨC
+            PIGINA <br /> CHUYÊN GIA MEN VI SINH PHỤ NỮ TỪ ĐỨC
           </h2>
           <div className={styles.descSection2}>
-            <div className={styles.desLeft}>{renderItem()}</div>
+            <div className={styles.desLeft}>
+              {renderItem()}
+              <div className={styles.wraperButton}>
+                <Button text="Xem thêm" />
+                <Button text="Mua hàng" />
+              </div>
+            </div>
             <div className={styles.desRight}>
               <Image
                 alt="image"

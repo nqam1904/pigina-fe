@@ -3,4 +3,11 @@
   height: auto;
   margin-top: 95px;
   margin-bottom: 140px;
+  .containerContent {
+    width: 1200px;
+    display: flex;
+    margin: 100px auto;
+    padding: 0 48px;
+    flex-direction: column;
+  }
 }

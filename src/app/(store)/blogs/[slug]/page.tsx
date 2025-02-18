@@ -19,7 +19,7 @@ const BlogsPage = () => {
   return (
     <div className={styles.container}>
       <Slider data={dataSlider} />
-      <div dangerouslySetInnerHTML={{ __html: data }} />
+      <div className={styles.containerContent} dangerouslySetInnerHTML={{ __html: data }} />
     </div>
   );
 };

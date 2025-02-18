@@ -11,27 +11,22 @@ import localFont from "next/font/local";
 const myFont = localFont({
   src: [
     {
-      path: "../../public/fonts/Helvetica.ttf",
+      path: "../../public/fonts/SFProText-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Helvetica-Bold.ttf",
+      path: "../../public/fonts/SFProText-Bold.ttf",
       weight: "700",
       style: "bold",
     },
     {
-      path: "../../public/fonts/MierA-Bold.ttf",
-      weight: "700",
-      style: "bold",
-    },
-    {
-      path: "../../public/fonts/MierA-Regular.ttf",
-      weight: "400",
+      path: "../../public/fonts/SFProText-Medium.ttf",
+      weight: "500",
       style: "normal",
     },
   ],
-  variable: "--font-mier-a",
+  variable: "--font-SFProText",
 });
 
 export const viewport: Viewport = {
