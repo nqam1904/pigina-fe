@@ -20,8 +20,7 @@ const dataThumbnail = [
   {
     id: 0,
     url: "/images/thumbnail_1.png",
-    title:
-      "Dòng siêu phẩm chăm sóc vùng kín từ phức hợp tái tạo tế bào gốc 3-GF",
+    title: "DÒNG SIÊU PHẨM CHĂM SÓC VÙNG KÍN TỪ PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF",
     description: "Nâng cấp vùng kín chuẩn y khoa",
     button: "Sản phẩm dành cho nàng",
     backgroundColor: "",
@@ -30,7 +29,7 @@ const dataThumbnail = [
   {
     id: 1,
     title:
-      "Giải pháp làm sạch sâu, bảo vệ hiểu quả và dưỡng ẩm cho làn da non nớt, mỏng cánh của bé yêu",
+      "GIẢI PHÁP LÀM SẠCH SÂU, BẢO VỆ HIỆU QUẢ VÀ DƯỠNG ẨM CHO LÀN DA NON NỚT, MỎNG MANH CỦA BÉ YÊU",
     author: "",
     description: "Làm sạch cho bé chuẩn y khoa",
     url: "/images/thumbnail_2.png",
