@@ -101,7 +101,6 @@ const BlogsPage = () => {
             required
           ></textarea>
           <Button type="submit" text="Kết nối chuyên gia" />
-          {/* <button type="submit">Kết nối chuyên gia</button> */}
         </form>
       </div>
     </section>

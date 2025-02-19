@@ -21,9 +21,8 @@ const dataThumbnail = [
     id: 0,
     url: "/images/thumbnail_1.png",
     title:
-      "YEARS OF SEEKING THE PERFECT SUPPLEMENT LED ME TO CREATE MY OWN HEALTH SOLUTION.",
-    author: "Kourtney Kardashian Barker, Founder",
-    description: "Lemme introduce you to the upgrade you can feel.",
+      "Dòng siêu phẩm chăm sóc vùng kín từ phức hợp tái tạo tế bào gốc 3-GF",
+    description: "Nâng cấp vùng kín chuẩn y khoa",
     button: "Sản phẩm dành cho nàng",
     backgroundColor: "",
     borderColor: "",
@@ -31,9 +30,9 @@ const dataThumbnail = [
   {
     id: 1,
     title:
-      "YEARS OF SEEKING THE PERFECT SUPPLEMENT LED ME TO CREATE MY OWN HEALTH SOLUTION.",
-    author: "Kourtney Kardashian Barker, Founder",
-    description: "Lemme introduce you to the upgrade you can feel.",
+      "Giải pháp làm sạch sâu, bảo vệ hiểu quả và dưỡng ẩm cho làn da non nớt, mỏng cánh của bé yêu",
+    author: "",
+    description: "Làm sạch cho bé chuẩn y khoa",
     url: "/images/thumbnail_2.png",
     button: "Sản phẩm dành cho bé",
     backgroundColor: "#ffe066",

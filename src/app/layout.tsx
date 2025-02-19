@@ -54,6 +54,10 @@ export default async function RootLayout({
   const lang = CONFIG.isStaticExport ? "en" : await detectLanguage();
   return (
     <html lang={lang} suppressHydrationWarning className={`${myFont.variable}`}>
+      <link
+        rel="stylesheet"
+        href="https://cdn.ckeditor.com/ckeditor5/44.2.0/ckeditor5.css"
+      />
       <body suppressHydrationWarning>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />

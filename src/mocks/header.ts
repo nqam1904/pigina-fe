@@ -40,8 +40,8 @@ const listHeader = [
   },
   {
     id: 4,
-    title: "Giới thiệu",
-    link: "/gioi-thieu",
+    title: "Câu hỏi thường gặp",
+    link: "/cau-hoi-thuong-gap",
   },
 ];
 

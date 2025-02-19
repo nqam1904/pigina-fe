@@ -12,10 +12,6 @@ const Footer: React.FC = () => {
           </h3>
           <div className={styles.footerLine} />
           <p>Hotline: +84.969662280</p>
-          {/* <p>
-            Email:{" "}
-            <a href="mailto:cndginseng@gmail.com">cndginseng@gmail.com</a>
-          </p> */}
           <p>
             Website:{" "}
             <a href="https://pigina.com.vn" target="_blank">
@@ -39,19 +35,39 @@ const Footer: React.FC = () => {
             style={{ marginLeft: "-12px" }}
           />
         </div>
-        <div className={styles.footerMap}>
-          <h3 className={styles.footerTitle}>Địa chỉ</h3>
-          <div className={styles.footerLine} />
-          <div className={styles.mapResponsive}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29793.265423749035!2d105.744049!3d21.026356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134548454d7698b%3A0x5109177b4ad9d65f!2zS2h1IMSRw7QgdGjhu4sgU2luaCBUaMOhaSBYdcOibiBQaMawxqFuZw!5e0!3m2!1sen!2sus!4v1739635649822!5m2!1sen!2sus"
-              allowFullScreen={true}
-              width="500"
-              height="200"
-              style={{ border: 0 }}
-              referrerPolicy="no-referrer-when-downgrade"
-              loading="lazy"
-            ></iframe>
+        <div className={styles.footerSocial}>
+          <div className={styles.wraperLogo}>
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className={styles.logoFooter}
+            />
+            <div className={styles.listSocial}>
+              <Image
+                src="/images/icons/facebook-icon.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                className={styles.icon}
+              />
+              <Image
+                src="/images/icons/youtube-icon.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                className={styles.icon}
+              />
+              <Image
+                src="/images/icons/instagram-icon.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                className={styles.icon}
+              />
+            </div>
           </div>
         </div>
       </div>

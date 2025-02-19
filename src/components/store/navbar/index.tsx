@@ -45,7 +45,7 @@ const StoreNavBar = () => {
   const renderLink = () => {
     return listHeader.map((item, index) => {
       return (
-        <li key={index}>
+        <div className={styles.headerItem} key={index}>
           <Link href={item.link}>{item.title}</Link>
           {item.subMenu ? (
             <div
@@ -60,15 +60,15 @@ const StoreNavBar = () => {
             </div>
           ) : null}
           {item.subMenu ? (
-            <ul className={styles.subMenu}>
+            <div className={styles.subMenu}>
               {item.subMenu.map((sub) => (
-                <li key={sub.id}>
+                <div className={styles.subMenuItem} key={sub.id}>
                   <Link href={sub.link}>{sub.title}</Link>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           ) : null}
-        </li>
+        </div>
       );
     });
   };
@@ -81,14 +81,14 @@ const StoreNavBar = () => {
             <Image
               alt="logo"
               src={"/images/logo.png"}
-              width={165}
+              width={182}
               height={63}
               quality={100}
               priority
               className={styles.logo}
             />
           </Link>
-          <ul>{renderLink()}</ul>
+          <div className={styles.header}>{renderLink()}</div>
           <div className={styles.iconMenu} onClick={() => setIsActive(true)}>
             <MenuIcon width={24} />
           </div>

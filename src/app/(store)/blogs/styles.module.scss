@@ -15,7 +15,7 @@
       font-weight: 600;
       font-size: 36px;
       text-transform: uppercase;
-      color: $text_title;
+      color: $primary;
       margin: 20px auto 45px;
       line-height: 1.25;
     }
@@ -23,7 +23,6 @@
 
   .section2 {
     padding: 65px 0;
-    // background-color: #edebf5;
     background-color: #fdeaf4;
     position: relative;
     width: 100%;
@@ -110,7 +109,7 @@
       font-size: 36px;
       line-height: 50px;
       text-transform: uppercase;
-      color: $text_title;
+      color: $primary;
       font-weight: 600;
     }
 

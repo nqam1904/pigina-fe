@@ -28,33 +28,27 @@
         max-width: 60%;
       }
     }
-    .footerMap {
-      .footerTitle {
-        font-size: 1em;
-        font-weight: bold;
-      }
-      .footerLine {
-        width: 50px;
-        height: 2px;
-        background: $black_06;
-        margin-bottom: 10px;
-      }
-      .mapResponsive {
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        height: 0;
-        border: 0;
-        border-radius: 12px;
-        width: 500px;
-        height: 200px;
-        max-width: 100%;
-        iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+    .footerSocial {
+      .wraperLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logoFooter {
+          width: 300px;
+          height: 85px;
+          aspect-ratio: 842/595;
+          object-fit: contain;
+        }
+        .listSocial {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+          .icon {
+            width: 40px;
+            height: 40px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+          }
         }
       }
     }
@@ -83,12 +77,8 @@
     p {
       max-width: 100% !important;
     }
-    .footerMap {
-      .mapResponsive {
-        width: 100% !important;
-        height: 200px;
-        max-width: 100%;
-      }
+    .footerSocial {
+      margin: 20px auto;
     }
   }
   .bottomFooter {

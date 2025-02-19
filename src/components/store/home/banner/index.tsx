@@ -9,7 +9,6 @@ const Banner: React.FC = () => {
       <div className={styles.wraperBanner} key={index}>
         <div className={styles.textContent}>
           <h1>{item.title}</h1>
-          <p className={styles.author}>— {item.author}</p>
           <p className={styles.description}>{item.description}</p>
           <Button text={item.button} />
         </div>
