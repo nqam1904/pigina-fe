@@ -37,12 +37,12 @@ const BlogsPage = () => {
           ))}
         </SlickSlider>
         <br />
-        <h1 className={styles.titleNews}>KIẾN THỨC SẢN PHẨM</h1>
+        {/* <h1 className={styles.titleNews}>KIẾN THỨC SẢN PHẨM</h1>
         <SlickSlider>
           {dataBlogs.map((item, index) => (
             <ItemSlideBlog {...item} key={index} />
           ))}
-        </SlickSlider>
+        </SlickSlider> */}
       </div>
       <div className={styles.section2}>
         <div className={styles.containerSection}>

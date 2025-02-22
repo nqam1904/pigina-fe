@@ -9,9 +9,7 @@ const ItemSlideBlog: React.FC<ItemProps> = ({
   title = "",
   slug = "",
   thumbnail = "",
-  description = "",
   shortDes = "",
-  author = "user",
 }) => {
   return (
     <Link href={`/blogs/${slug}`}>

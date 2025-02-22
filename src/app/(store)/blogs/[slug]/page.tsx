@@ -2,7 +2,9 @@
 import { dataSlider } from "@/mocks";
 import styles from "./styles.module.scss";
 
+import SlickSlider from "@/components/UI/slick-slide";
 import Slider from "@/components/UI/slider";
+import ItemSlideBlog from "@/components/store/blogs/item-slide-blog";
 import { dataBlogs } from "@/mocks/blogs";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -23,6 +25,14 @@ const BlogsPage = () => {
         className={`${styles.containerContent} ck-content`}
         dangerouslySetInnerHTML={{ __html: data }}
       />
+      <div className={`${styles.containerBlog} storeContainer`}>
+        <h2>Bài viết liên quan</h2>
+        <SlickSlider>
+          {dataBlogs.map((item, index) => (
+            <ItemSlideBlog {...item} key={index} />
+          ))}
+        </SlickSlider>
+      </div>
     </div>
   );
 };
