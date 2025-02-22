@@ -1,5 +1,6 @@
 "use client";
 
+import Breadcrumb from "@/components/UI/breadcrumb";
 import { SK_Box } from "@/components/UI/skeleton";
 import Slider from "@/components/UI/slider";
 import { dataSliderSection1, dataSliderSection2 } from "@/mocks";
@@ -27,6 +28,7 @@ const Page = () => {
       <Slider
         data={slug === "danh-cho-be" ? dataSliderSection2 : dataSliderSection1}
       />
+      {data ? <Breadcrumb slug={data?.title} /> : <div />}
       <div className="storeContainer">
         {data ? (
           <div

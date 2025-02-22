@@ -200,6 +200,7 @@ Chúng tôi luôn nỗ lực phát triển các kỹ thuật mới để hỗ tr
 const dataSectionHome = [
   {
     id: 1,
+    title: "Dành cho nàng",
     slug: "danh-cho-nang",
     content: `<p style="-webkit-text-stroke-width:0px;box-sizing:border-box;color:rgb(0, 0, 0);font-family:Times;font-size:medium;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-left:0px;orphans:2;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
     <span style="font-family:&quot;Times New Roman&quot;, Times, serif;"><span style="box-sizing:border-box;"><strong style="box-sizing:border-box;">DÒNG SIÊU PHẨM CHĂM SÓC VÙNG KÍN TỪ PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF</strong></span></span>
@@ -498,6 +499,7 @@ const dataSectionHome = [
   },
   {
     id: 2,
+    title: "Dành cho bé",
     slug: "danh-cho-be",
     content: `<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(122, 122, 122);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
     <br>
