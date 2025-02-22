@@ -349,30 +349,21 @@ const dataSectionHome = [
   {
     id: 1,
     slug: "danh-cho-nang",
-    content: `<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
-    <strong style="box-sizing:border-box;">DÒNG SIÊU PHẨM CHĂM SÓC VÙNG KÍN TỪ PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF</strong>
+    content: `<p style="margin-left:0px;text-align:justify;">
+    <span style="font-family:'Times New Roman', Times, serif;"><strong>DÒNG SIÊU PHẨM CHĂM SÓC VÙNG KÍN TỪ PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF</strong></span>
 </p>
-<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
-    PHỨC HỢP 3-GF LÀ GÌ? 3-GF bao gồm EGF – IGF – FGF là 3 loại protein tự nhiên có sẵn trong các tế bào da người, giúp tái tạo, làm đầy, sửa chữa làn da, các vết thương, niêm mạc âm đạo, bằng cách thúc đẩy DNA và tăng sinh tế bào. Có thể được tổng hợp từ phòng thí nghiệm để hoạt động chính xác như trong tự nhiên mà không cần sử dụng bất kỳ thành phần có nguồn gốc từ người hoặc động vật – tạo nên bí quyết nâng cấp vùng kín vượt trội cho cho người phụ nữ hiện đại.
+<p style="margin-left:0px;text-align:justify;">
+    <span style="font-family:'Times New Roman', Times, serif;">PHỨC HỢP 3-GF LÀ GÌ? 3-GF bao gồm EGF – IGF – FGF là 3 loại protein tự nhiên có sẵn trong các tế bào da người, giúp tái tạo, làm đầy, sửa chữa làn da, các vết thương, niêm mạc âm đạo, bằng cách thúc đẩy DNA và tăng sinh tế bào. Có thể được tổng hợp từ phòng thí nghiệm để hoạt động chính xác như trong tự nhiên mà không cần sử dụng bất kỳ thành phần có nguồn gốc từ người hoặc động vật – tạo nên bí quyết nâng cấp vùng kín vượt trội cho cho người phụ nữ hiện đại.</span>
 </p>
 <figure class="table" style="width:100%;">
     <table class="ck-table-resized">
-        <colgroup><col style="width:49.3%;"><col style="width:50.7%;"></colgroup>
+        <colgroup><col style="width:49.35%;"><col style="width:50.65%;"></colgroup>
         <tbody>
             <tr>
                 <td>
-                    <figure class="image" data-ckbox-resource-id="QmXhqTr4CTvq">
-                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/2560.webp 2560w" sizes="(max-width: 2560px) 100vw, 2560px" type="image/webp"><img src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/QmXhqTr4CTvq/images/2560.jpeg" width="2560" height="2560"></picture>
-                    </figure>
-                </td>
-                <td>
-                    <figure class="image image_resized" style="width:93.91%;" data-ckbox-resource-id="9JOOk3tjb9yG">
-                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/2560.webp 2560w" type="image/webp" sizes="(max-width: 2560px) 100vw, 2560px"><img src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/9JOOk3tjb9yG/images/2560.jpeg" width="2560" height="2559"></picture>
-                    </figure>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/2560.webp 2560w" sizes="(max-width: 2560px) 100vw, 2560px" type="image/webp"><img class="image_resized" style="width:100%;" data-ckbox-resource-id="DyCKTnrDpbDi" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/DyCKTnrDpbDi/images/2560.jpeg" width="2560" height="2560"></picture>
+                    </p>
                     <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
                         <strong style="box-sizing:border-box;">HỘP 6 VIÊN ĐẶT SE KHÍT – TÁI TẠO TẾ BÀO 3-GF PIGINA</strong>
                     </p>
@@ -400,6 +391,9 @@ const dataSectionHome = [
                     </ul>
                 </td>
                 <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/2560.webp 2560w" type="image/webp" sizes="(max-width: 2560px) 100vw, 2560px"><img class="image_resized" style="width:96.21%;" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/LsRASMVH0fgV/images/2560.jpeg" data-ckbox-resource-id="LsRASMVH0fgV" width="2560" height="2559"></picture>
+                    </p>
                     <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
                         <strong style="box-sizing:border-box;">SET 18 VIÊN ĐẶT SE KHÍT- TÁI TẠO TẾ BÀO 3-GF PIGINA</strong>
                     </p>
@@ -427,12 +421,235 @@ const dataSectionHome = [
                     </ul>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/80.webp 80w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/160.webp 160w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/240.webp 240w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/320.webp 320w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/400.webp 400w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/480.webp 480w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/500.webp 500w" sizes="(max-width: 500px) 100vw, 500px" type="image/webp"><img class="image_resized" style="width:99.37%;" data-ckbox-resource-id="yPVy0v2-fqmf" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/yPVy0v2-fqmf/images/500.png" width="500" height="500"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">DUNG DỊCH VỆ SINH TÁI TẠO TẾ BÀO 3-GF PIGINA</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đảm bảo sức khỏe và sắc đẹp vùng kín của bạn.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp phòng chống, hỗ trợ điều trị hiệu quả các bệnh vùng kín, mùi hôi và tình trạng khô hạn của vùng chữ Y
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp tái thiết và duy trì độ pH lí tưởng cho vùng âm đạo ở mức 3.8-4.5.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Thông qua bộ 3 công nghệ tái tạọ tế bào hàng đầu 3-GF: EGF, IGF, FGF, Acid Lactic và chiết xuất từ thảo dược thiên nhiên phù hợp chăm sóc hiệu quả, an toàn cho khu vực nữ tính nhất trên cơ thể bạn.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói:&nbsp;Chai xịt 150ml/5.07oz.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/80.webp 80w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/160.webp 160w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/240.webp 240w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/320.webp 320w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/400.webp 400w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/480.webp 480w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/500.webp 500w" type="image/webp" sizes="(max-width: 500px) 100vw, 500px"><img class="image_resized" style="width:95.73%;" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/zyvW6XO2Lylo/images/500.jpeg" data-ckbox-resource-id="zyvW6XO2Lylo" width="500" height="500"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">DUNG DỊCH VỆ SINH TÁI&nbsp;TẠO TẾ BÀO 3-GF PIGINA</strong>,<strong style="box-sizing:border-box;"> DẠNG GÓI TIỆN LỢI</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đảm bảo sức khỏe và sắc đẹp vùng kín của bạn.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp phòng chống, hỗ trợ điều trị hiệu quả các bệnh vùng kín, mùi hôi và tình trạng khô hạn của vùng chữ Y
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp tái thiết và duy trì độ pH lí tưởng cho vùng âm đạo ở mức 3.8-4.5.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Thông qua bộ 3 công nghệ tái tạọ tế bào hàng đầu 3-GF: EGF, IGF, FGF, Acid Lactic và chiết xuất từ thảo dược thiên nhiên phù hợp chăm sóc hiệu quả, an toàn cho khu vực nữ tính nhất trên cơ thể bạn.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói: gói 5ml/0.17oz. Gói nhỏ tiện lợi cho du lịch, công tác xa nhà.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/80.webp 80w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/160.webp 160w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/240.webp 240w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/320.webp 320w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/400.webp 400w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/480.webp 480w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/560.webp 560w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/640.webp 640w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/699.webp 699w" sizes="(max-width: 699px) 100vw, 699px" type="image/webp"><img class="image_resized" style="width:100%;" data-ckbox-resource-id="GXCsrPV_woeu" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/GXCsrPV_woeu/images/699.png" width="699" height="699"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">VIÊN UỐNG BỔ SUNG NỘI TIẾT NỮ OSTARA – BÍ QUYẾT THĂNG HOA CHO PHỤ NỮ HIỆN ĐẠI</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                &nbsp;Ostara Spring giúp tăng tối đa Estrogen nội sinh, tăng cường sinh lý nữ, giảm khô hạn, điều hoà kinh nguyệt. Sản phẩm được bào chế từ 100% tinh chất thiên nhiên, an toàn với người sử dụng, tác dụng từ gốc, hiệu quả bền lâu.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Tăng sản sinh Estrogen nội sinh, tăng cường sinh lý bền vững, giảm khô hạn, giảm chứng bốc hoả, giúp ngủ ngon, giảm nám sạm da.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                &nbsp;Điều hoà kinh nguyệt, ổn định tuyến thượng thận, gia tăng khoái cảm, cân bằng các hormone trong cơ thể.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói: Lọ 30 viên nén bao phim.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/2560.webp 2560w" sizes="(max-width: 2560px) 100vw, 2560px" type="image/webp"><img class="image_resized" style="width:87.46%;" data-ckbox-resource-id="AWAWie8dh9uH" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/AWAWie8dh9uH/images/2560.jpeg" width="2560" height="2560"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">GEL MASSAGE ĐA CÔNG DỤNG PIGINA</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Cung cấp chất nhờn và độ ẩm tự nhiên ngay tức thì, khắc phục tình trạng khô hạn, đau rát vùng kín, tăng hưng phấn cho cuộc yêu.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Trẻ hoá ở cấp độ tế bào, tăng săn chắc giúp da vùng kín mềm mại, mượt mà và cải thiện sắc tố da.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Thông qua bộ 3 công nghệ tái tạọ tế bào hàng đầu 3-GF: EGF, IGF, FGF, Phyto-Estrogen, Citric Acid, Keo Ong và chiết xuất từ thảo dược thiên nhiên chăm sóc hiệu quả, an toàn cho khu vực chữ Y nhạy cảm.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói: Tuýp 90ml/3fl.oz.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/338.webp 338w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/676.webp 676w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/1014.webp 1014w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/1352.webp 1352w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/1690.webp 1690w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/2028.webp 2028w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/2366.webp 2366w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/2704.webp 2704w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/3042.webp 3042w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/3376.webp 3376w" type="image/webp" sizes="(max-width: 3376px) 100vw, 3376px"><img class="image_resized" style="width:99.99%;" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/O2aaY2XhjZ6E/images/3376.png" data-ckbox-resource-id="O2aaY2XhjZ6E" width="3376" height="3376"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Chứa 19 chủng lợi khuẩn, được cấp bằng sáng chế, tương thích với âm đạo phụ nữ Châu Á.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Cung cấp dưỡng chất thiết yếu cho sức khoẻ và sắc đẹp.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Cải thiện viêm âm đạo, viêm tiết niệu-bàng quang do nấm và vi khuẩn
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp các loại thuốc kháng sinh hoạt động hiệu quả hơn; ngăn ngừa viêm tái phát.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Công nghệ bao lợi khuẩn bằng vật liệu sinh học Bio-Coating Technology.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Công nghệ bao bù cản nhiệt – hút ẩm dành riêng cho lợi khuẩn, nhập khẩu Hoa Kỳ/Active-Polumer Technology.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói: Lọ 30 viên nang cứng.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>
+                        <picture><source srcset="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/256.webp 256w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/512.webp 512w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/768.webp 768w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/1024.webp 1024w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/1280.webp 1280w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/1536.webp 1536w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/1792.webp 1792w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/2048.webp 2048w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/2304.webp 2304w,https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/2560.webp 2560w" type="image/webp" sizes="(max-width: 2560px) 100vw, 2560px"><img class="image_resized" style="width:97.36%;" src="https://ckbox.cloud/aaeb652413c8c9f8bff8/assets/YnthgRiI_lMp/images/2560.jpeg" data-ckbox-resource-id="YnthgRiI_lMp" width="2560" height="2560"></picture>
+                    </p>
+                    <p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <strong style="box-sizing:border-box;">Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (3×30 viên)</strong>
+                    </p>
+                    <ul style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:&quot;Roboto Condensed&quot;, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;list-style:inherit;margin-bottom:0px;margin-right:0px;margin-top:0px;orphans:2;padding:0px 0px 0px 20px;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Chứa 19 chủng lợi khuẩn, được cấp bằng sáng chế, tương thích với âm đạo phụ nữ Châu Á.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Cung cấp dưỡng chất thiết yếu cho sức khoẻ và sắc đẹp.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Cải thiện viêm âm đạo, viêm tiết niệu-bàng quang do nấm và vi khuẩn
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Giúp các loại thuốc kháng sinh hoạt động hiệu quả hơn; ngăn ngừa viêm tái phát.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Công nghệ bao lợi khuẩn bằng vật liệu sinh học Bio-Coating Technology.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Công nghệ bao bù cản nhiệt – hút ẩm dành riêng cho lợi khuẩn, nhập khẩu Hoa Kỳ/Active-Polumer Technology.
+                            </p>
+                        </li>
+                        <li style="box-sizing:border-box;margin-bottom:0px;margin-right:0px;margin-top:0px;padding:0px;">
+                            <p style="margin-left:0px;text-align:justify;">
+                                Đóng gói: Set 3 Lọ x 30 viên nang cứng.
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
         </tbody>
     </table>
-</figure>
-<p>
-    &nbsp;
-</p>`,
+</figure>`,
     preview: [
       {
         url: "https://www.youtube.com/embed/Gdk3ZVSBTLw",
