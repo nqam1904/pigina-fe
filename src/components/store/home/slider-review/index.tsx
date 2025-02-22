@@ -1,12 +1,14 @@
 "use client";
 
+import { getReview } from "@/actions/reviewApi";
 import Rating from "@/components/UI/rating";
-import { dataReview } from "@/mocks";
+import { CONFIG } from "@/config-global";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import styles from "./styles.module.scss";
+import { SK_Box } from "@/components/UI/skeleton";
 
 const SliderReview: React.FC = () => {
   const settings = {
@@ -49,27 +51,46 @@ const SliderReview: React.FC = () => {
       },
     ],
   };
+  const [data, setData] = useState<any>([]);
+
+  const fetchData = async () => {
+    try {
+      const { payload } = await getReview();
+      setData(payload?.data || []);
+    } catch (error) {
+      console.log(error);
+      setData([]);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const renderReview = () => {
-    return dataReview.map((item, index) => {
+    return data.map((item: any, index: number) => {
       return (
         <div className={styles.item} key={index}>
           <div className={styles.headerItem}>
             <Image
-              src={item.image}
+              src={`${CONFIG.assetsDir}${item?.avatar?.url}`}
               alt="avatar"
               width={50}
               height={50}
               className={styles.avatar}
             />
             <div className={styles.rightHeader}>
-              <span className={styles.name}>{item.name}</span>
-              <Rating rating={item.rating} />
+              <span className={styles.name}>{item?.fullName || ""}</span>
+              <Rating rating={5} />
               <span className={styles.occupation}>
-                {`${item.age} tuổi - ${item.occupation}`}
+                {`${item?.age || 0} tuổi - ${item?.occupation || ""}`}
               </span>
             </div>
-            <Link className={styles.icFace} href={item.social} target="_blank">
+            <Link
+              className={styles.icFace}
+              href={item?.social || ""}
+              target="_blank"
+            >
               <Image
                 src={"/images/ic_facebook.png"}
                 alt="facebook"
@@ -80,15 +101,26 @@ const SliderReview: React.FC = () => {
           </div>
           {/* testimonal */}
           <div className={styles.bodyItem}>
-            <span className={styles.testimonial}>{item.review}</span>
+            <span className={styles.testimonial}>{item?.review || ""}</span>
           </div>
         </div>
       );
     });
   };
+
   return (
     <div className={styles.container}>
-      <Slider {...settings}>{renderReview()}</Slider>
+      {data.length > 0 ? (
+        <Slider {...settings}>{renderReview()}</Slider>
+      ) : (
+        <React.Fragment>
+          <div className={styles.loading}>
+            <SK_Box width="100%" height="16px" />
+            <SK_Box width="100%" height="16px" />
+            <SK_Box width="100%" height="16px" />
+          </div>
+        </React.Fragment>
+      )}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { ArrowIcon } from "@/components/icons/svgIcons";
 import Image from "next/image";
 import styles from "./slider.module.scss";
 
+import { CONFIG } from "@/config-global";
 import { useEffect, useState } from "react";
 
 type SliderProps = {
@@ -95,8 +96,8 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
             className={index === activeSlideNum ? styles.active : ""}
           >
             <Image
-              src={slide.image}
-              alt=""
+              src={`${CONFIG.assetsDir}${slide?.image?.url}`}
+              alt={slide?.image?.name}
               fill
               sizes="(max-width:1080px)"
               priority
