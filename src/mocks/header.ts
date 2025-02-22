@@ -46,7 +46,7 @@ const listHeader = [
   {
     id: 4,
     title: "Câu hỏi thường gặp",
-    link: "/cau-hoi-thuong-gap",
+    link: "#",
   },
 ];
 
