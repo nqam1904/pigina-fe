@@ -18,7 +18,20 @@
     text-decoration: underline;
   }
 }
+@media (max-width: 1024px) {
+  .wraperBanner {
+    padding: 0 16px;
 
+    .imageBanner {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+    }
+    .bannerText {
+      margin-top: 0;
+    }
+  }
+}
 @media (max-width: 768px) {
   .wraperBanner {
     padding: 0 16px;
