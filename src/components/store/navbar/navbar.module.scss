@@ -113,6 +113,19 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    .top {
+      padding: 24px;
+      .header {
+        display: none;
+      }
+      .iconMenu {
+        display: block;
+      }
+    }
+  }
+}
 @media (max-width: 480px) {
   .navbar {
     .top {

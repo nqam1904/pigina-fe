@@ -1,32 +1,5 @@
 @import "/public/css/variables.module.scss";
 
-// @font-face {
-//   font-family: "Mier A";
-//   src: url("/fonts/MierA-Regular.ttf") format(".ttf");
-//   font-weight: 400;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: "Mier A";
-//   src: url("/fonts/MierA-Bold.ttf") format(".ttf");
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Helvetica";
-//   src: url("/fonts/Helvetica.ttf") format(".ttf");
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Helvetica";
-//   src: url("/fonts/Helvetica-Bold.ttf") format(".ttf");
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
 @font-face {
   font-family: "SFProText";
   src: url("/fonts/SFProText-Bold.ttf") format(".ttf");
@@ -121,41 +94,20 @@ a {
 .slick-arrow.slick-next {
   display: none;
 }
-// .slick-next {
-//   background-image: url(../../public/images/next.png);
-//   background-repeat: no-repeat;
-//   right: -25px;
-//   position: absolute;
-//   z-index: 2;
-//   text-indent: -9999px;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 100%;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   border: 0;
-// }
-// .slick-next:hover {
-//   opacity: 0.75 !important;
-// }
-// .slick-prev {
-//   background-image: url(../../public/images/prev.png);
-//   background-repeat: no-repeat;
-//   left: -25px;
-//   position: absolute;
-//   z-index: 2;
-//   text-indent: -9999px;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 100%;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   border: 0;
-// }
+
+.ck-content .table table {
+  border: none !important;
+}
+
+.ck-content table {
+  border-collapse: collapse;
+  border: none;
+}
+
+.ck-content table td,
+.ck-content table th {
+  border: none !important;
+}
 
 @media (min-width: 1440px) {
   .storeContainer {

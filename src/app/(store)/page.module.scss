@@ -13,8 +13,8 @@
   .thumbnailContainer {
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 
   .reviewContainer {
@@ -34,14 +34,16 @@
 }
 
 @media (max-width: 768px) {
-  .thumbnailContainer {
-    height: auto;
-    flex-direction: column;
-  }
-  .reviewContainer {
-    padding: 12px 0 !important;
-    h2 {
-      font-size: 1.5rem;
+  .homePage {
+    .thumbnailContainer {
+      height: auto;
+      flex-direction: column;
+    }
+    .reviewContainer {
+      padding: 12px 0;
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -15,7 +15,6 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
 
   const renderLink = () => {
     return listHeader.map((item, index) => {
-      ``;
       return (
         <>
           <li key={index}>

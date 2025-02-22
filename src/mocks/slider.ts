@@ -15,27 +15,38 @@ const dataSlider = [
     title: "DÒNG SIÊU PHẨM PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF",
   },
 ];
-
-const dataThumbnail = [
+const dataSliderSection1 = [
   {
     id: 0,
-    url: "/images/thumbnail_1.png",
-    title: "DÒNG SIÊU PHẨM CHĂM SÓC VÙNG KÍN TỪ PHỨC HỢP TÁI TẠO TẾ BÀO 3-GF",
-    description: "Nâng cấp vùng kín chuẩn y khoa",
-    button: "Sản phẩm dành cho nàng",
-    backgroundColor: "",
-    borderColor: "",
+    image: "/images/section/section1_1.png",
   },
   {
     id: 1,
-    title:
-      "GIẢI PHÁP LÀM SẠCH SÂU, BẢO VỆ HIỆU QUẢ VÀ DƯỠNG ẨM CHO LÀN DA NON NỚT, MỎNG MANH CỦA BÉ YÊU",
-    author: "",
-    description: "Làm sạch cho bé chuẩn y khoa",
+    image: "/images/section/section1_2.png",
+  },
+];
+const dataSliderSection2 = [
+  {
+    id: 0,
+    image: "/images/section/section2_1.jpg",
+  },
+  {
+    id: 1,
+    image: "/images/section/section2_2.jpg",
+  },
+];
+const dataThumbnail = [
+  {
+    id: 0,
+    slug: "danh-cho-nang",
+    url: "/images/thumbnail_1.png",
+    button: "Dành cho nàng",
+  },
+  {
+    id: 1,
+    slug: "danh-cho-be",
     url: "/images/thumbnail_2.png",
-    button: "Sản phẩm dành cho bé",
-    backgroundColor: "#ffe066",
-    borderColor: "#ffe066",
+    button: "Dành cho bé",
   },
 ];
 
@@ -83,4 +94,10 @@ const dataReview = [
     review: `Là một Huấn luyện viên thể thao, tôi thường xuyên tập luyện, đổ mồ hôi liên tục trong ngày nên cũng phải tắm rửa nhiều hơn mọi người. Các sản phẩm vệ sinh phụ nữ trước đây tôi đã từng sử dụng, do cường độ dùng liên tục nên khiến vùng da chỗ đó khô rát, rất khó chịu. Từ hồi biêt đến Pigina mọi vấn đề đã được giải quyết triệt để, tôi có thể sử dụng gel rửa nhiều lần trong ngày mà không hề bị khô rát, ngứa ngáy, vùng bikini luôn khô thoáng, thơm mát, mượt mà. Ngoài ra gel rửa Pigina còn có gói nhỏ 5ml mang đi du lịch và công tác rất tiện lợi.`,
   },
 ];
-export { dataReview, dataSlider, dataThumbnail };
+export {
+  dataReview,
+  dataSlider,
+  dataSliderSection1,
+  dataSliderSection2,
+  dataThumbnail,
+};

@@ -63,7 +63,9 @@ const StoreNavBar = () => {
             <div className={styles.subMenu}>
               {item.subMenu.map((sub) => (
                 <div className={styles.subMenuItem} key={sub.id}>
-                  <Link href={sub.link}>{sub.title}</Link>
+                  <Link href={sub.link} onClick={() => setIsActive(false)}>
+                    {sub.title}
+                  </Link>
                 </div>
               ))}
             </div>
