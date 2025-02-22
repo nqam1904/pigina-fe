@@ -44,14 +44,13 @@ const BlogsPage = () => {
       <div className={styles.section2}>
         <div className={styles.containerSection}>
           <h2 className={styles.titleSection2}>
-            PIGINA <br /> CHUYÊN GIA MEN VI SINH PHỤ NỮ TỪ ĐỨC
+            PIGINA KOREA <br /> CHẤP CÁNH THĂNG HOA
           </h2>
           <div className={styles.descSection2}>
             <div className={styles.desLeft}>
               {renderItem()}
               <div className={styles.wraperButton}>
                 <Button text="Xem thêm" />
-                <Button text="Mua hàng" />
               </div>
             </div>
             <div className={styles.desRight}>
@@ -65,8 +64,7 @@ const BlogsPage = () => {
                 className={styles.imageSection}
               />
               <span className={styles.content}>
-                HỖ TRỢ GIẢM TÁI PHÁT VIÊM, NẤM, NGỨA VÀ 12 VẤN ĐỀ “CÔ ẤY” THƯỜNG
-                GẶP
+                SỐ 1 HÀN QUỐC VỀ CHĂM SÓC SỨC KHỎE VÀ SẮC ĐẸP VÙNG KÍN
               </span>
             </div>
           </div>

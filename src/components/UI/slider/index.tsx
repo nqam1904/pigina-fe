@@ -2,7 +2,6 @@
 
 import { ArrowIcon } from "@/components/icons/svgIcons";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./slider.module.scss";
 
 import { useEffect, useState } from "react";
@@ -108,13 +107,8 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                 className={`${styles.slideData} ${
                   index === activeSlideNum && styles.active
                 }`}
-              >
-                {/* <h2>{slide.title}</h2> */}
-                {/* {slide.msg.desc && <span>{slide.msg.desc}</span>} */}
-                {/* <Link href={slide.url}>{slide.msg.buttonText}</Link> */}
-              </div>
+              ></div>
             ) : null}
-            {/* <span className={styles.timeBar} /> */}
           </div>
         ))}
       </div>

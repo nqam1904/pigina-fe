@@ -732,16 +732,21 @@ const dataSectionHome = [
 
 const dataSection = [
   {
-    content: `Bí quyết để "cô ấy” luôn khỏe mạnh nằm ở sự đột phá của bộ 3 thành phần, kết hợp giữa lợi khuẩn, Cranberry và D-Mannose, bảo vệ toàn diện vùng kín, tiết niệu và bàng quang.
-Đồng thời giảm tái phát viêm phụ khoa và viêm tiết niệu cùng lúc.`,
+    content: `Pigina Korea từ lâu được biết đến là một thương hiệu uy tín với giải pháp nâng cấp sức khỏe và sắc đẹp
+vùng kín phái nữ đến từ Hàn Quốc. Qua thời gian hình thành và phát triển, với sự đầu tư nghiêm túc,
+bài bản, Pigina ngày càng khẳng định được vị thế của mình trên thị trường hiện nay.`,
     image: "/images/blog2.png",
   },
   {
-    content: `Công nghệ vi nang Micro Encapsulated được cấp bằng sáng chế giúp X5 hiệu quả của sản phẩm, đẩy nhanh tốc độ cân bằng hệ vi sinh và vô hiệu hóa hại khuẩn.`,
+    content: `Chúng tôi cam kết, sản phẩm đến tay khách hàng đảm bảo thành phần đúng như công
+bố và tuân thủ mọi quy định của Luật pháp Việt Nam. Đồng thời cũng cam kết chiu
+trách nhiệm 100% về chất lượng sản phẩm cũng như sức khoẻ của người tiêu dùng.`,
     image: "/images/blog3.png",
   },
   {
-    content: `Pigina có mặt tại các nhà thuốc trên toàn lãnh thổ Đức; được các bác sĩ, dược sĩ, chuyên gia Đức khuyên dùng.`,
+    content: `Chúng tôi tin tưởng rằng với đội ngũ nhân sự tận tâm, nhiệt huyết và giàu kinh nghiệm
+cũng như đội ngũ chuyên gia uy tín, Pigina Korea sẽ là người bạn đồng hành tin cậy của
+Quý Khách hàng và Quý Đại lý trên mọi miền Tổ quốc.`,
     image: "/images/blog3.png",
   },
 ];
