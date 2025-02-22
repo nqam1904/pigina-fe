@@ -3,7 +3,7 @@ import Icon from "@/components/UI/icon";
 import { listHeader } from "@/mocks";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 interface IProps {
   isVisible: boolean;
@@ -11,13 +11,13 @@ interface IProps {
   handleOnClose: () => void;
 }
 const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<any>(null);
 
   const renderLink = () => {
     return listHeader.map((item, index) => {
       return (
         <>
-          <li key={index}>
+          <div className={styles.itemSubMenu} key={index}>
             <Link href={item.link} onClick={handleOnClose}>
               {item.title}
             </Link>
@@ -26,7 +26,8 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
                 className={styles.arrow}
                 onClick={(e: React.MouseEvent) => {
                   e.preventDefault();
-                  setShow(!show);
+                  setShow(index);
+                  console.log(index, "index");
                 }}
               >
                 <Icon
@@ -37,22 +38,29 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
                 />
               </div>
             ) : null}
-          </li>
-          {item.subMenu && show ? (
-            <ul className={styles.subMenu}>
+          </div>
+          {item.subMenu && show === index ? (
+            <div className={styles.subMenu}>
               {item.subMenu.map((sub) => (
-                <li key={sub.id}>
+                <div key={sub.id}>
                   <Link href={sub.link} onClick={handleOnClose}>
                     {sub.title}
                   </Link>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           ) : null}
         </>
       );
     });
   };
+
+  useEffect(() => {
+    return () => {
+      setShow(null);
+    };
+  }, [isVisible]);
+
   return (
     <div
       className={`${styles.container} ${!isVisible && styles.containerHide}`}
@@ -75,7 +83,7 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
           </div>
         </div>
         <div className={styles.itemsContainer}>
-          <ul>{renderLink()}</ul>
+          <div className={styles.itemMenu}>{renderLink()}</div>
         </div>
       </div>
     </div>
