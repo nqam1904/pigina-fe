@@ -22,7 +22,6 @@ const Page = () => {
   useEffect(() => {
     fetchApi();
   }, [slug]);
-
   return (
     <div className={`${styles.container}`}>
       <Slider

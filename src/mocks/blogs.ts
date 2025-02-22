@@ -617,6 +617,7 @@ const dataSectionHome = [
   },
   {
     id: 3,
+    title: "Câu chuyện nhãn hàng",
     slug: "cau-chuyen-nhan-hang",
     content: `<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Roboto, sans-serif;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 0px 20px;orphans:2;padding:0px;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">
     Nguồn gốc của PIGINA bắt đầu khoảng 300 năm trước vào cuối triều đại Joseon với một bác sĩ y học cổ truyền Hàn Quốc ở tỉnh Jeolla.
@@ -645,6 +646,7 @@ const dataSectionHome = [
   },
   {
     id: 4,
+    title: "Tầm nhìn sứ mệnh",
     slug: "tam-nhin-su-menh",
     content: `<p>
     Thông điệp<br>
