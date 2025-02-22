@@ -16,7 +16,12 @@ const Banner: React.FC = () => {
           priority
           className={styles.imageBanner}
         />
-        <p className={styles.bannerText}>{item.button}</p>
+        <p
+          className={styles.bannerText}
+          style={index === 1 ? { color: "#ffe066" } : {}}
+        >
+          {item.button}
+        </p>
       </Link>
     );
   };

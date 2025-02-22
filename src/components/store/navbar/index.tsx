@@ -83,7 +83,7 @@ const StoreNavBar = () => {
             <Image
               alt="logo"
               src={"/images/logo.png"}
-              width={182}
+              width={200}
               height={63}
               quality={100}
               priority

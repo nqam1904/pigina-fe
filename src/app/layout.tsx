@@ -11,22 +11,22 @@ import localFont from "next/font/local";
 const myFont = localFont({
   src: [
     {
-      path: "../../public/fonts/SFProText-Regular.ttf",
+      path: "../../public/fonts/Raleway-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/SFProText-Bold.ttf",
+      path: "../../public/fonts/Raleway-Bold.ttf",
       weight: "700",
       style: "bold",
     },
     {
-      path: "../../public/fonts/SFProText-Medium.ttf",
+      path: "../../public/fonts/Raleway-Black.ttf",
       weight: "500",
       style: "normal",
     },
   ],
-  variable: "--font-SFProText",
+  variable: "--font-Custom",
 });
 
 export const viewport: Viewport = {

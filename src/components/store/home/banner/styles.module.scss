@@ -1,22 +1,21 @@
 @import "/public/css/variables.module.scss";
 .wraperBanner {
-  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   .imageBanner {
     width: 100%;
-    height: 400px;
-    object-fit: contain;
+    height: 500px;
+    object-fit: cover;
   }
   .bannerText {
     margin-top: 24px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 2rem;
     color: $primary;
+    text-decoration: underline;
   }
 }
 
@@ -24,7 +23,7 @@
   .wraperBanner {
     .imageBanner {
       width: 100%;
-      height: 400px;
+      height: 300px;
     }
     .bannerText {
       margin-top: 0;
