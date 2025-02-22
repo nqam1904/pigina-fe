@@ -952,13 +952,13 @@ const dataSection = [
     content: `Pigina Korea từ lâu được biết đến là một thương hiệu uy tín với giải pháp nâng cấp sức khỏe và sắc đẹp
 vùng kín phái nữ đến từ Hàn Quốc. Qua thời gian hình thành và phát triển, với sự đầu tư nghiêm túc,
 bài bản, Pigina ngày càng khẳng định được vị thế của mình trên thị trường hiện nay.`,
-    image: "/images/blog2.png",
+    image: "/images/blog1.png",
   },
   {
     content: `Chúng tôi cam kết, sản phẩm đến tay khách hàng đảm bảo thành phần đúng như công
 bố và tuân thủ mọi quy định của Luật pháp Việt Nam. Đồng thời cũng cam kết chiu
 trách nhiệm 100% về chất lượng sản phẩm cũng như sức khoẻ của người tiêu dùng.`,
-    image: "/images/blog3.png",
+    image: "/images/blog2.png",
   },
   {
     content: `Chúng tôi tin tưởng rằng với đội ngũ nhân sự tận tâm, nhiệt huyết và giàu kinh nghiệm

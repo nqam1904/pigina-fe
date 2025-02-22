@@ -1,20 +1,23 @@
+"use client";
+
 import ItemSlideBlog from "@/components/store/blogs/item-slide-blog";
 import Button from "@/components/UI/button";
 import SlickSlider from "@/components/UI/slick-slide";
 import { dataBlogs, dataSection } from "@/mocks/blogs";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import styles from "./styles.module.scss";
 
 const BlogsPage = () => {
+  const router = useRouter();
   const renderItem = () => {
     return dataSection.map((item, index) => {
       return (
         <div className={styles.leftItem} key={index}>
           <Image
             alt="image"
-            width={92}
-            height={94}
-            sizes="100vw"
+            width={156}
+            height={100}
             priority
             src={item.image}
             className={styles.imgBlog}
@@ -50,7 +53,10 @@ const BlogsPage = () => {
             <div className={styles.desLeft}>
               {renderItem()}
               <div className={styles.wraperButton}>
-                <Button text="Xem thêm" />
+                <Button
+                  text="Xem thêm"
+                  onClick={() => router.push("/danh-cho-nang")}
+                />
               </div>
             </div>
             <div className={styles.desRight}>
