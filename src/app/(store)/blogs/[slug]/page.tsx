@@ -18,7 +18,7 @@ const BlogsPage = () => {
     const response = dataBlogs.find((item) => item.slug === slug);
     setData(response || null);
   }, [slug]);
-  console.log(data, "data");
+
   return (
     <div className={styles.container}>
       <Slider data={dataSlider} />

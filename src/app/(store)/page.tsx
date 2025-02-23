@@ -15,7 +15,7 @@ const Home = async () => {
   return (
     <div className={styles.homePage}>
       <div className={styles.heroContainer}>
-        <Slider data={dataSlider} />
+        <Slider data={dataSlider} type="api" />
       </div>
       <section className={styles.thumbnailContainer}>
         <Banner />

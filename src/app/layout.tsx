@@ -58,6 +58,11 @@ export default async function RootLayout({
       suppressHydrationWarning={false}
       className={`${myFont.variable}`}
     >
+      <link
+        rel="stylesheet"
+        href="https://cdn.ckeditor.com/ckeditor5/44.2.0/ckeditor5.css"
+      />
+
       <body suppressHydrationWarning={false}>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />
