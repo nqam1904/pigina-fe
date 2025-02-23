@@ -32,7 +32,7 @@ function FaqView(props: FaqViewProps) {
 
   return (
     <div className={styles.container}>
-      <Slider data={banner} />
+      <Slider data={banner} type="api" />
       <Breadcrumb slug="Câu hỏi thường gặp" />
       <div className={`storeContainer`}>
         <div className={styles.faq}>{getDataFAQ()}</div>
