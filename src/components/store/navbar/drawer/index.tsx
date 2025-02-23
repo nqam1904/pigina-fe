@@ -17,8 +17,8 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
   const renderLink = () => {
     return listHeader.map((item, index) => {
       return (
-        <React.Fragment>
-          <div className={styles.itemSubMenu} key={index}>
+        <React.Fragment key={index}>
+          <div className={styles.itemSubMenu}>
             <Link href={item.link} onClick={handleOnClose}>
               {item.title}
             </Link>
@@ -28,7 +28,6 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
                 onClick={(e: React.MouseEvent) => {
                   e.preventDefault();
                   setShow(index);
-                  console.log(index, "index");
                 }}
               >
                 <Icon
