@@ -4,6 +4,7 @@ import { ArrowIcon } from "@/components/icons/svgIcons";
 import Image from "next/image";
 import styles from "./slider.module.scss";
 
+import { CONFIG } from "@/config-global";
 import { useEffect, useState } from "react";
 
 type SliderProps = {
@@ -99,7 +100,7 @@ const Slider: React.FC<SliderProps> = (props) => {
             <Image
               src={`${
                 type === "api"
-                  ? "https://pigina.com.vn" + slide?.image?.url
+                  ? CONFIG.assetsDir + slide?.image?.url
                   : slide.image
               }`}
               alt={slide?.image?.name}

@@ -1,3 +1,5 @@
+import { CONFIG } from "@/config-global";
+
 type CustomOptions = Omit<RequestInit, "method"> & {
   baseUrl?: string | undefined;
 };
@@ -73,9 +75,7 @@ const request = async <Response>(
   // Nếu truyền baseUrl thì lấy giá trị truyền vào, truyền vào '' thì đồng nghĩa với việc chúng ta gọi API đến Next.js Server
 
   const baseUrl =
-    options?.baseUrl === undefined
-      ? "https://pigina.com.vn/api"
-      : options.baseUrl;
+    options?.baseUrl === undefined ? CONFIG.serverUrl : options.baseUrl;
 
   const fullUrl = url.startsWith("/")
     ? `${baseUrl}${url}`

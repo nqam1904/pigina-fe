@@ -1,9 +1,7 @@
 export type DataBlogs = {
   id: number | string;
   title: string;
-  thumbnail: string;
+  banner: any[];
   slug: string;
-  shortDes: string;
   description: string;
-  author: string;
 };
