@@ -1,10 +1,13 @@
 "use client";
 
+import SliderReview from "@/components/store/home/slider-review";
 import Breadcrumb from "@/components/UI/breadcrumb";
+import ItemProduct from "@/components/UI/item-product";
 import { SK_Box } from "@/components/UI/skeleton";
 import Slider from "@/components/UI/slider";
 import { dataSliderSection1, dataSliderSection2 } from "@/mocks";
 import { dataSectionHome } from "@/mocks/blogs";
+import { dataProduct } from "@/mocks/product";
 import { fakeApiCall } from "@/utils/utils";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -29,6 +32,7 @@ const Page = () => {
         data={slug === "danh-cho-be" ? dataSliderSection2 : dataSliderSection1}
       />
       {data ? <Breadcrumb slug={data?.title} /> : <div />}
+      {/* DESCRIPTION */}
       <div className="storeContainer">
         {data ? (
           <div
@@ -45,9 +49,9 @@ const Page = () => {
           </React.Fragment>
         )}
       </div>
+      {/* VIDEO */}
       {data?.preview.length > 0 ? (
         <div className={styles.reviewContainer}>
-          {data.preview.length === 1 ? <></> : <h2>Cảm nhận của khác hàng</h2>}
           {data.preview.length === 1 ? (
             <div className={styles.video}>
               {data?.preview?.map?.((item: any, index: number) => (
@@ -83,6 +87,20 @@ const Page = () => {
       ) : (
         <div />
       )}
+      {/* LIST PRODUCT */}
+      <div className={styles.productContainer}>
+        <h2 className={styles.titleProduct}>Chi tiết các sản phẩm</h2>
+        <div className={styles.listProduct}>
+          {dataProduct.map((item, index) => {
+            return <ItemProduct {...item} key={index} />;
+          })}
+        </div>
+      </div>
+      {/* CUSTOMER PREVIEW */}
+      <section className={styles.reviewContainer}>
+        <h2>Cảm nhận khách hàng</h2>
+        <SliderReview />
+      </section>
     </div>
   );
 };

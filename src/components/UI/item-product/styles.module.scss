@@ -1,0 +1,44 @@
+@import "/public/css/variables.module.scss";
+
+.product {
+  background: $white;
+  width: calc(100% - 64px) / 4;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  flex-direction: column;
+  padding: 16px;
+  cursor: pointer;
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .productName {
+      color: $primary;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+  .badgeProduct {
+    background: $orange_03;
+    color: $white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .productImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 256 / 256;
+    object-fit: contain;
+  }
+  .productButton {
+    height: 24px;
+    font-size: 16px;
+    padding: 16px;
+  }
+}

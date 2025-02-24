@@ -8,6 +8,7 @@ interface IProps {
   onClick?: () => void;
   backgroundColor?: string;
   borderColor?: string;
+  className?: string;
 }
 
 const Button: React.FC<IProps> = ({
@@ -17,12 +18,13 @@ const Button: React.FC<IProps> = ({
   disabled = false,
   backgroundColor = "",
   borderColor = "",
+  className = "",
 }) => {
   return (
     <button
       disabled={disabled}
       type={type}
-      className={styles.button}
+      className={`${styles.button} ${className}`}
       onClick={onClick}
       style={{ backgroundColor, borderColor }}
     >
