@@ -4,12 +4,15 @@ import { ArrowIcon } from "@/components/icons/svgIcons";
 import Image from "next/image";
 import styles from "./slider.module.scss";
 
+import { CONFIG } from "@/config-global";
 import { useEffect, useState } from "react";
 
 type SliderProps = {
   data: any[];
+  type?: "api" | "local";
 };
-const Slider: React.FC<SliderProps> = ({ data }) => {
+const Slider: React.FC<SliderProps> = (props) => {
+  const { data, type = "local" } = props;
   const [activeSlideNum, setActiveSlideNum] = useState(0);
   const touchPos = {
     start: 0,
@@ -95,8 +98,12 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
             className={index === activeSlideNum ? styles.active : ""}
           >
             <Image
-              src={slide.image}
-              alt=""
+              src={`${
+                type === "api"
+                  ? CONFIG.assetsDir + slide?.image?.url
+                  : slide.image
+              }`}
+              alt={slide?.image?.name}
               fill
               sizes="(max-width:1080px)"
               priority

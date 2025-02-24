@@ -3,8 +3,9 @@ import Icon from "@/components/UI/icon";
 import { listHeader } from "@/mocks";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"; // Add import statement for React
 import styles from "./styles.module.scss";
+
 interface IProps {
   isVisible: boolean;
   quantity?: number;
@@ -16,8 +17,8 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
   const renderLink = () => {
     return listHeader.map((item, index) => {
       return (
-        <>
-          <div className={styles.itemSubMenu} key={index}>
+        <React.Fragment key={index}>
+          <div className={styles.itemSubMenu}>
             <Link href={item.link} onClick={handleOnClose}>
               {item.title}
             </Link>
@@ -27,7 +28,6 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
                 onClick={(e: React.MouseEvent) => {
                   e.preventDefault();
                   setShow(index);
-                  console.log(index, "index");
                 }}
               >
                 <Icon
@@ -41,8 +41,8 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
           </div>
           {item.subMenu && show === index ? (
             <div className={styles.subMenu}>
-              {item.subMenu.map((sub) => (
-                <div key={sub.id}>
+              {item.subMenu.map((sub, index) => (
+                <div key={index}>
                   <Link href={sub.link} onClick={handleOnClose}>
                     {sub.title}
                   </Link>
@@ -50,7 +50,7 @@ const Drawer: React.FC<IProps> = ({ isVisible, handleOnClose }) => {
               ))}
             </div>
           ) : null}
-        </>
+        </React.Fragment>
       );
     });
   };

@@ -16,6 +16,11 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'pigina.com.vn',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'i0.wp.com',
         port: '',
         pathname: '/**',

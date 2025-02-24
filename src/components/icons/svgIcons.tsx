@@ -162,3 +162,20 @@ export const MenuIcon = ({ width, fill }: IProps) => {
     ),
   });
 };
+
+export const ArrowIconAccordion = ({ width, fill }: IProps) => {
+  return createIcon({
+    width,
+    viewBox: "0 0 24 24",
+    svgData: (
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="m17 14l-5-5l-5 5"
+      />
+    ),
+  });
+};

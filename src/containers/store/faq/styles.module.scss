@@ -1,0 +1,18 @@
+@import "/public/css/variables.module.scss";
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  margin: 100px 0;
+  .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 40px 0;
+  }
+}

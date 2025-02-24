@@ -1,7 +1,7 @@
+import { getBanner } from "@/actions/bannerApi";
 import Banner from "@/components/store/home/banner";
 import SliderReview from "@/components/store/home/slider-review";
 import Slider from "@/components/UI/slider";
-import { dataSlider } from "@/mocks";
 import { Metadata } from "next";
 import styles from "./page.module.scss";
 
@@ -9,11 +9,13 @@ export const metadata: Metadata = {
   title: "Pigina",
 };
 
-const Home = () => {
+const Home = async () => {
+  const { payload } = await getBanner();
+  const dataSlider = payload?.data || [];
   return (
     <div className={styles.homePage}>
       <div className={styles.heroContainer}>
-        <Slider data={dataSlider} />
+        <Slider data={dataSlider} type="api" />
       </div>
       <section className={styles.thumbnailContainer}>
         <Banner />
