@@ -18,25 +18,31 @@ const CategoryView = () => {
   const [banner, setBanner] = useState<any[]>([]);
 
   const fetchApi = async () => {
-    let listBanner: any = [];
-    // GET CATEGORY
-    const category = await getCateogry(slug);
-    setData(category.payload.data[0]);
-    if (category.payload.data[0]?.banner) {
-      category.payload.data[0]?.banner.map((item: any) => {
-        listBanner.push({
-          id: item.id,
-          image: { url: item.url },
+    try {
+      let listBanner: any = [];
+      // GET CATEGORY
+      const category = await getCateogry(slug);
+      setData(category.payload.data[0]);
+      if (category.payload.data[0]?.banner) {
+        category.payload.data[0]?.banner.map((item: any) => {
+          listBanner.push({
+            id: item.id,
+            image: { url: item.url },
+          });
         });
-      });
-    }
-    setBanner(listBanner);
+      }
+      setBanner(listBanner);
 
-    // GET PRODUCT
-    const product = await getProductByCategory(
-      category.payload.data[0]?.title || ""
-    );
-    setProductList(product.payload?.data || []);
+      // GET PRODUCT
+      const product = await getProductByCategory(
+        category.payload.data[0]?.title || ""
+      );
+      setProductList(product.payload?.data || []);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   useEffect(() => {
@@ -131,8 +137,14 @@ const CategoryView = () => {
       )}
       {/* CUSTOMER PREVIEW */}
       <section className={styles.reviewContainer}>
-        <h2>Cảm nhận khách hàng</h2>
-        <SliderReview />
+        {data ? (
+          <React.Fragment>
+            <h2>Cảm nhận khách hàng</h2>
+            <SliderReview />
+          </React.Fragment>
+        ) : (
+          <div />
+        )}
       </section>
     </div>
   );

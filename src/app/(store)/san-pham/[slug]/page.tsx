@@ -11,7 +11,7 @@ export async function generateMetadata({
   const { payload } = await getProductBySlug(params?.slug);
   if (!payload && payload.data.length === 0) {
     return {
-      title: "Không tìm thấy danh mục!",
+      title: "Không tìm thấy sản phẩm!",
     };
   }
   return {

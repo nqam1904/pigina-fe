@@ -3,9 +3,51 @@
 .productPage {
   width: 100%;
   height: auto;
-  margin-top: 160px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
+
+  // -------------------- BREADCRUMB --------------------
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+      display: inline-block;
+      font-size: 1rem;
+      color: $black_12;
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+    .linkBreadcrumb {
+      display: inline-block;
+      font-size: 1rem;
+      color: $black_12;
+      &:not(:first-child)::before {
+        padding: 0 6px;
+        color: $black_12;
+        content: "/";
+      }
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .linkProduct {
+      display: inline-block;
+      font-size: 1rem;
+      color: $black_12;
+      &:not(:first-child)::before {
+        padding: 0 5px;
+        color: $black_12;
+        content: "/";
+      }
+    }
+  }
 
   // -------------------- UPPER SECTION --------------------
   .upperSection {
@@ -55,7 +97,6 @@
     height: auto;
     display: flex;
     gap: 50px;
-    margin-top: 40px;
 
     // ---------------- LEFT COLUMN ----------------
     .leftSection {
@@ -71,86 +112,14 @@
         > h2 {
           font-weight: 300;
           display: block;
-          font-size: 2.4rem;
+          font-size: 1.8rem;
           color: nth($color-light, 9);
           padding: 20px 0;
           border-bottom: 1px solid $black_05;
         }
-
-        .specGroup {
-          width: 100%;
-          padding: 20px 0;
-          border-bottom: 1px solid $black_05;
-
-          .specGroupHead {
-            display: flex;
-            align-items: center;
-            width: 100%;
-
-            > button {
-              width: 30px;
-              height: 30px;
-              display: inline-block;
-              position: relative;
-              border: none;
-              background-color: white;
-              border-radius: 4px;
-
-              > svg {
-                position: absolute;
-                top: 14px;
-                left: 10px;
-                stroke: nth($color-light, 7);
-              }
-
-              &:hover {
-                background-color: nth($color-light, 2);
-              }
-            }
-
-            > h3 {
-              margin-left: 12px;
-              display: inline-block;
-              font-size: 1.6rem;
-              font-weight: 400;
-              color: nth($color-light, 7);
-            }
-          }
-
-          .row {
-            width: 100%;
-            padding-top: 12px;
-            display: flex;
-            align-items: stretch;
-            background-color: white;
-            font-size: 1.4rem;
-            border-radius: 8px;
-
-            &:hover {
-              background-color: nth($color-light, 1);
-            }
-
-            .leftCol {
-              min-width: 160px;
-
-              display: flex;
-              align-items: flex-start;
-              margin-left: 42px;
-              color: nth($color-light, 7);
-            }
-
-            .rightCol {
-              font-weight: 500;
-              color: nth($color-light, 10);
-
-              > span {
-                display: block;
-                line-height: 2rem;
-                min-height: 30px;
-                height: auto;
-              }
-            }
-          }
+        .contentDescription {
+          font-family: "Raleway", "Helvetica", sans-serif;
+          line-height: 1.2;
         }
       }
 
@@ -410,32 +379,6 @@
 
   > .price {
     margin-top: 60px;
-  }
-}
-
-.specLoading {
-  display: flex;
-  flex-direction: column;
-  margin: 16px 0 60px;
-  gap: 16px;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  > .specs {
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    margin-left: 40px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .cardsContainer {
-    padding-bottom: 30px;
-    overflow-x: scroll;
   }
 }
 
