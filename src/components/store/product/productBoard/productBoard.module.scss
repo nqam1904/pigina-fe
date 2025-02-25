@@ -22,7 +22,7 @@
   .shortDesc {
     display: block;
     font-size: 1.2rem;
-    color: nth($color-light, 7);
+    line-height: 1.8rem;
     font-family: "Raleway", "Helvetica", sans-serif;
   }
 
@@ -47,8 +47,8 @@
 @media (max-width: 480px) {
   .productBoard {
     > h1 {
-      font-size: 2rem;
-      line-height: 3rem;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
     }
 
     .optionsProductSection {

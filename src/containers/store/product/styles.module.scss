@@ -57,33 +57,6 @@
 
     .leftSection {
       flex-grow: 1;
-
-      .path {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-
-        > a {
-          font-size: 1.4rem;
-          color: nth($color-light, 9);
-          margin-right: 4px;
-
-          &:hover {
-            font-weight: 500;
-          }
-
-          &:after {
-            margin-left: 4px;
-            content: "/";
-          }
-
-          &:last-child {
-            &:after {
-              content: "";
-            }
-          }
-        }
-      }
     }
 
     .rightSection {
@@ -110,248 +83,31 @@
         margin-bottom: 50px;
 
         > h2 {
-          font-weight: 300;
+          font-weight: 400;
           display: block;
           font-size: 1.8rem;
-          color: nth($color-light, 9);
+          color: $black_17;
           padding: 20px 0;
           border-bottom: 1px solid $black_05;
         }
         .contentDescription {
           font-family: "Raleway", "Helvetica", sans-serif;
-          line-height: 1.2;
+          line-height: 1.4;
         }
-      }
-
-      // ---------------- DESCRIPTION ----------------
-      .description {
-        width: 100%;
-        margin-bottom: 100px;
-        position: relative;
-
-        > h2 {
-          font-weight: 300;
-          display: block;
-          font-size: 2.4rem;
-          color: nth($color-light, 9);
-          padding: 20px 0;
-          border-bottom: 1px solid $black_05;
+        .listProduct {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
         }
-
-        .wrapperShowMore {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin-bottom: 0;
-          display: block;
-          padding-top: 50px;
+        .loading {
           width: 100%;
-          text-align: center;
-          background: linear-gradient(
-            rgba(255, 255, 255, 0),
-            rgb(255, 255, 255)
-          );
-
-          > .btnShowMore {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            width: 100%;
-            margin-top: 20px;
-
-            > span {
-              font-size: 16px;
-              font-weight: 400;
-              color: $blue_04;
-              margin-right: 10px;
-            }
-
-            > img {
-              color: $blue_04;
-            }
-          }
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-      }
-
-      // ---------------- USER REVIEW ----------------
-      .userReviews {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin: 100px 0;
-
-        .header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-bottom: 16px;
-          border-bottom: 1px solid nth($color-light, 3);
-
-          > h2 {
-            font-weight: 300;
-            display: block;
-            font-size: 2.4rem;
-            color: nth($color-light, 9);
-          }
-
-          > button {
-            font-size: 1.4rem;
-            color: nth($color-light, 9);
-            padding: 6px 24px;
-            border-radius: 6px;
-            background-color: nth($color-light, 1);
-            border: 1px solid nth($color-light, 7);
-
-            &:hover {
-              background-color: nth($color-light, 2);
-            }
-
-            &:active {
-              background-color: nth($color-light, 3);
-            }
-          }
-        }
-
-        .reviewWrapper {
           display: flex;
           flex-direction: column;
-          width: 100%;
-
-          // ----------- HEAD -----------
-          .head {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%;
-            margin-top: 20px;
-            font-size: 1.4rem;
-
-            .user {
-              display: flex;
-              height: 32px;
-              align-items: center;
-              color: nth($color-light, 8);
-              font-weight: 500;
-
-              > img {
-                border-radius: 50%;
-                overflow: hidden;
-                margin-right: 12px;
-              }
-            }
-
-            .isVerified {
-              color: #f97a1f;
-              margin-left: 30px;
-              font-weight: 500;
-            }
-
-            .dateAndLikeSection {
-              .date {
-                display: inline-block;
-                margin-left: 30px;
-                padding-left: 24px;
-                background-image: url("/images/icons/dateIcon.svg");
-                background-repeat: no-repeat;
-                background-position: left center;
-              }
-
-              .likeInteraction {
-                margin-left: 40px;
-                display: inline-block;
-
-                > button {
-                  height: 30px;
-                  margin-right: 12px;
-                  font-size: 1.6rem;
-                  font-weight: 500;
-                  padding: 0 12px;
-                  background-color: white;
-                  border: 1px solid white;
-                  border-radius: 6px;
-                  color: nth($color-light, 9);
-
-                  > svg {
-                    fill: white;
-                    stroke: nth($color-light, 10);
-                    margin-right: 8px;
-                  }
-                }
-
-                .like {
-                  &:hover {
-                    border-color: nth($color-green, 6);
-                    background-color: nth($color-green, 8);
-
-                    > svg {
-                      fill: nth($color-green, 7);
-                    }
-                  }
-
-                  &:active {
-                    border-color: nth($color-green, 5);
-
-                    > svg {
-                      fill: nth($color-green, 6);
-                    }
-                  }
-                }
-
-                .dislike {
-                  &:hover {
-                    border-color: nth($color-red, 7);
-                    background-color: rgba(nth($color-red, 9), 0.4);
-
-                    > svg {
-                      fill: nth($color-red, 8);
-                    }
-                  }
-
-                  &:active {
-                    border-color: nth($color-red, 5);
-
-                    > svg {
-                      fill: nth($color-red, 7);
-                    }
-                  }
-
-                  > svg {
-                    display: inline-block;
-                    transform: scaleX(-1) rotate(180deg) translateY(-3px);
-                  }
-                }
-              }
-            }
-          }
-
-          // ----------- BODY -----------
-          .body {
-            margin: 16px 0 16px 46px;
-            font-size: 1.4rem;
-            line-height: 2rem;
-
-            color: nth($color-light, 9);
-          }
-
-          .emptyReview {
-            margin: 16px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            > span {
-              font-size: 1.4rem;
-              line-height: 2rem;
-              text-align: center;
-            }
-          }
+          justify-content: space-between;
+          gap: 20px;
+          margin: 20px 0;
         }
       }
     }
@@ -402,9 +158,33 @@
         width: 100%;
       }
     }
+    .lowerSection {
+      .leftSection {
+        .specification {
+          .listProduct {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+      }
+    }
   }
 }
-
+@media (max-width: 768px) {
+  .productPage {
+    .lowerSection {
+      .leftSection {
+        .specification {
+          .contentDescription {
+            margin: 0 auto;
+          }
+          .listProduct {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 480px) {
   .productPage {
     .upperSection {
@@ -438,36 +218,6 @@
           > h2 {
             font-size: 2rem;
             padding: 16px 0;
-          }
-
-          .specGroup {
-            padding-top: 8px;
-
-            .specGroupHead {
-              display: flex;
-              flex-direction: row-reverse;
-              align-items: center;
-              justify-content: space-between;
-
-              > h3 {
-                margin-left: 0;
-              }
-            }
-
-            .row {
-              height: auto;
-              flex-direction: column;
-              padding: 12px 8px;
-
-              .leftCol {
-                margin-left: 0;
-              }
-
-              .rightCol {
-                width: 100%;
-                margin-top: 8px;
-              }
-            }
           }
         }
       }

@@ -1,7 +1,8 @@
 "use client";
-import { getProductBySlug } from "@/actions/productApi";
+import { getProductByCategory, getProductBySlug } from "@/actions/productApi";
 import Gallery from "@/components/store/product/gallery";
 import ProductBoard from "@/components/store/product/productBoard";
+import ItemProduct from "@/components/UI/item-product";
 import { SK_Box } from "@/components/UI/skeleton";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -11,7 +12,9 @@ import styles from "./styles.module.scss";
 function ProductView() {
   const { slug } = useParams<any>();
   const [product, setProduct] = useState<any>(null);
-  console.log(product);
+  const [listProduct, setListProduct] = useState<any[]>([]);
+
+  console.log(product, listProduct);
 
   const fetchApi = async () => {
     try {
@@ -22,14 +25,28 @@ function ProductView() {
     } catch (error) {
       console.log(error);
       setProduct(null);
-    } finally {
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
-
+  const getListProduct = async () => {
+    try {
+      const { payload } = await getProductByCategory(product?.category?.title);
+      if (payload.data.length > 0) {
+        setListProduct(payload.data);
+      }
+    } catch (error) {
+      console.log(error);
+      setListProduct([]);
+    }
+  };
   useEffect(() => {
     fetchApi();
   }, [slug]);
+
+  useEffect(() => {
+    if (product) {
+      getListProduct();
+    }
+  }, [product]);
 
   return (
     <div className="storeContainer">
@@ -76,6 +93,23 @@ function ProductView() {
                 className={styles.contentDescription}
                 dangerouslySetInnerHTML={{ __html: product?.description || "" }}
               />
+
+              {listProduct.length > 0 ? (
+                <>
+                  <h2>Sản phẩm tương tự</h2>
+                  <div className={styles.listProduct}>
+                    {listProduct.map((item, index) => {
+                      return <ItemProduct {...item} key={index} />;
+                    })}
+                  </div>
+                </>
+              ) : (
+                <div className={styles.loading}>
+                  <SK_Box width="100%" height="16px" />
+                  <SK_Box width="100%" height="16px" />
+                  <SK_Box width="100%" height="16px" />
+                </div>
+              )}
             </div>
           </div>
         </div>

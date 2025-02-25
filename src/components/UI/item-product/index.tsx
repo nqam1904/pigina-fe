@@ -43,7 +43,7 @@ function ItemProduct(props: ItemProductProps) {
         </div>
         <div className={styles.flexRow}></div>
       </>
-      <Link href={`/san-pham/${slug}`} target="_blank">
+      <Link href={`/san-pham/${slug}`}>
         <Button text="Tìm hiểu thêm" className={styles.productButton} />
       </Link>
     </div>
