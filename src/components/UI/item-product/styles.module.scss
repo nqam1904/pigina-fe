@@ -2,7 +2,6 @@
 
 .product {
   background: $white;
-  width: calc(100% - 64px) / 4;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -104,5 +103,10 @@
     padding: 16px;
     width: 100%;
     border-radius: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .product {
+    width: calc((100vw - 32px - 16px) / 2);
   }
 }
