@@ -5,6 +5,7 @@ import styles from "./gallery.module.scss";
 import { SK_Box } from "@/components/UI/skeleton";
 import { CONFIG } from "@/config-global";
 import { noImage } from "@/constants/constants";
+import { isEmpty } from "lodash";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -46,9 +47,9 @@ const Gallery: React.FC<IProps> = ({ images = [], height }: IProps) => {
         )}
       </div>
       <div className={styles.imageWrapper} style={{ height }}>
-        {images.length > 0 ? (
+        {!isEmpty(images) ? (
           <Image
-            src={`${CONFIG.assetsDir}${images[selectedIndex]?.url}`}
+            src={`${CONFIG.assetsDir}${images?.[selectedIndex]?.url}`}
             alt={`product_${selectedIndex}`}
             fill
             priority
@@ -59,7 +60,7 @@ const Gallery: React.FC<IProps> = ({ images = [], height }: IProps) => {
           <SK_Box width="90%" height="90%" />
         )}
       </div>
-      {images.length > 0 && showZoom ? (
+      {!isEmpty(images) && showZoom ? (
         <div className={styles.zoomWindow}>
           <div
             className={styles.background}
@@ -80,7 +81,9 @@ const Gallery: React.FC<IProps> = ({ images = [], height }: IProps) => {
           <div className={styles.imageList}>
             {images.map((image: any, index: number) => {
               let photo: string = "";
-              photo = image?.url ? `${CONFIG.assetsDir}${image?.url}` : noImage;
+              photo = !isEmpty(image)
+                ? `${CONFIG.assetsDir}${image?.url}`
+                : noImage;
               return (
                 <Image
                   src={photo}

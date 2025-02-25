@@ -2,6 +2,7 @@ import { InformationIcon } from "@/components/icons/svgIcons";
 import { CONFIG } from "@/config-global";
 import { noImage } from "@/constants/constants";
 import { ItemProductProps } from "@/types";
+import { isEmpty } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,8 +11,10 @@ import styles from "./styles.module.scss";
 
 function ItemProduct(props: ItemProductProps) {
   const { image = [], title, slug = "", tooltip, badge } = props || {};
-  const photo =
-    image.length > 0 ? `${CONFIG.assetsDir}${image[0]?.url}` : noImage;
+  console.log(image, "image");
+  const photo = !isEmpty(image)
+    ? `${CONFIG.assetsDir}${image?.[0]?.url}`
+    : noImage;
   console.log(photo, "photo image product");
   return (
     <div className={styles.product}>
