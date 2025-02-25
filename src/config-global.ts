@@ -15,7 +15,7 @@ export type ConfigValue = {
 // ----------------------------------------------------------------------
 
 export const CONFIG: ConfigValue = {
-  appName: "pigina",
+  appName: "Pigina Korea",
   isStaticExport: process.env.NEXT_PUBLIC_STATIC_EXPORT === "true",
   appVersion: packageJson.version,
   baseUrl: process.env.BASE_URL ?? "",

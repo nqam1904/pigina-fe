@@ -73,7 +73,7 @@ const SliderReview: React.FC = () => {
         <div className={styles.item} key={index}>
           <div className={styles.headerItem}>
             <Image
-              src={`https://pigina.com.vn${item?.avatar?.url}`}
+              src={`${CONFIG.assetsDir}${item?.avatar?.url}`}
               alt="avatar"
               width={50}
               height={50}

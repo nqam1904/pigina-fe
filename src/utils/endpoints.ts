@@ -3,4 +3,6 @@ export const endpoints = {
   review: "/reviews?populate=*",
   faq: "/faqs?populate=*",
   blog: "/blogs?populate=*",
+  categories: "/categories?populate=*",
+  products: "/products?populate=*",
 };

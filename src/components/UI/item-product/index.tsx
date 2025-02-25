@@ -1,0 +1,55 @@
+import { InformationIcon } from "@/components/icons/svgIcons";
+import { CONFIG } from "@/config-global";
+import { noImage } from "@/constants/constants";
+import { ItemProductProps } from "@/types";
+import { isEmpty } from "lodash";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Button from "../button";
+import styles from "./styles.module.scss";
+
+function ItemProduct(props: ItemProductProps) {
+  const { image = [], title, slug = "", tooltip, badge } = props || {};
+  console.log(image, "image");
+  const photo = !isEmpty(image)
+    ? `${CONFIG.assetsDir}${image?.[0]?.url}`
+    : noImage;
+  console.log(photo, "photo image product");
+  return (
+    <div className={styles.product}>
+      <>
+        {badge ? (
+          <span className={styles.badgeProduct}>{badge}</span>
+        ) : (
+          <React.Fragment />
+        )}
+
+        <div className={styles.wrapperImage}>
+          <Image
+            alt="image_product"
+            src={photo}
+            width={0}
+            height={0}
+            sizes="(max-width:256px)"
+            priority
+            draggable={false}
+            className={styles.productImage}
+          />
+        </div>
+        <div className={styles.wrapperName}>
+          <p className={styles.productName}>{title}</p>
+          <div className={styles.iconInfo}>
+            <InformationIcon width={24} />
+            <span className={styles.tooltipText}>{tooltip}</span>
+          </div>
+        </div>
+        <div className={styles.flexRow}></div>
+      </>
+      <Link href={`/san-pham/${slug}`}>
+        <Button text="Tìm hiểu thêm" className={styles.productButton} />
+      </Link>
+    </div>
+  );
+}
+export default ItemProduct;

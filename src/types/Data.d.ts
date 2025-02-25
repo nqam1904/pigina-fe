@@ -5,3 +5,11 @@ export type DataBlogs = {
   slug: string;
   description: string;
 };
+
+type ItemProductProps = {
+  title: string;
+  image: any[];
+  slug: string;
+  tooltip: string;
+  badge: string;
+};
