@@ -4,4 +4,5 @@ export const endpoints = {
   faq: "/faqs?populate=*",
   blog: "/blogs?populate=*",
   categories: "/categories?populate=*",
+  products: "/products?populate=*",
 };

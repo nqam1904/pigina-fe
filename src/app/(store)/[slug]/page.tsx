@@ -9,13 +9,13 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const { payload } = await getCateogry(params?.slug);
-  if (!payload.data && payload.data?.length === 0) {
+  if (!payload && payload.data?.length === 0) {
     return {
       title: "Không tìm thấy danh mục!",
     };
   }
   return {
-    title: `${payload?.data?.[0]?.name || ""} - ${CONFIG.appName}`,
+    title: `${payload?.data?.[0]?.title || ""} ${CONFIG.appName}`,
   };
 }
 function CategoriePage() {

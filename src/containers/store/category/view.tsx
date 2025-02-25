@@ -1,13 +1,12 @@
 "use client";
 
 import { getCateogry } from "@/actions/categoriesApi";
+import { getProductByCategory } from "@/actions/productApi";
 import SliderReview from "@/components/store/home/slider-review";
 import Breadcrumb from "@/components/UI/breadcrumb";
 import ItemProduct from "@/components/UI/item-product";
 import { SK_Box } from "@/components/UI/skeleton";
 import Slider from "@/components/UI/slider";
-import { dataProduct, dataProduct2 } from "@/mocks/product";
-import { fakeApiCall } from "@/utils/utils";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
@@ -17,13 +16,14 @@ const CategoryView = () => {
   const [data, setData] = useState<any>(null);
   const [productList, setProductList] = useState<any[]>([]);
   const [banner, setBanner] = useState<any[]>([]);
+
   const fetchApi = async () => {
     let listBanner: any = [];
+    // GET CATEGORY
     const category = await getCateogry(slug);
     setData(category.payload.data[0]);
     if (category.payload.data[0]?.banner) {
       category.payload.data[0]?.banner.map((item: any) => {
-        console.log(item);
         listBanner.push({
           id: item.id,
           image: { url: item.url },
@@ -31,12 +31,12 @@ const CategoryView = () => {
       });
     }
     setBanner(listBanner);
-    const product = await fakeApiCall(
-      slug === "danh-cho-be" ? dataProduct2 : dataProduct,
-      true,
-      1500
+
+    // GET PRODUCT
+    const product = await getProductByCategory(
+      category.payload.data[0]?.title || ""
     );
-    setProductList(product.data || []);
+    setProductList(product.payload?.data || []);
   };
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const CategoryView = () => {
           </div>
         </React.Fragment>
       )}
-      {data ? <Breadcrumb slug={data?.name} /> : <div />}
+      {data ? <Breadcrumb slug={data?.title} /> : <div />}
       {/* DESCRIPTION */}
       <div className="storeContainer">
         {data ? (

@@ -7,9 +7,9 @@ export type DataBlogs = {
 };
 
 type ItemProductProps = {
-  name: string;
-  image: string;
-  link: string;
+  title: string;
+  image: any[];
+  slug: string;
   tooltip: string;
   badge: string;
 };
