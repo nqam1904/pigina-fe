@@ -10,26 +10,34 @@ function ItemProduct(props: ItemProductProps) {
   const { image, name, link = "", tooltip, badge } = props || {};
   return (
     <div className={styles.product}>
-      {badge ? (
-        <span className={styles.badgeProduct}>{badge}</span>
-      ) : (
-        <React.Fragment />
-      )}
+      <>
+        {badge ? (
+          <span className={styles.badgeProduct}>{badge}</span>
+        ) : (
+          <React.Fragment />
+        )}
 
-      <Image
-        alt={name}
-        width={0}
-        height={0}
-        sizes="(max-width:256px)"
-        priority
-        draggable={false}
-        src={image}
-        className={styles.productImage}
-      />
-      <div className={styles.flexRow}>
-        <p className={styles.productName}>{name}</p>
-        <InformationIcon width={24} />
-      </div>
+        <div className={styles.wrapperImage}>
+          <Image
+            alt={name}
+            width={0}
+            height={0}
+            sizes="(max-width:256px)"
+            priority
+            draggable={false}
+            src={image}
+            className={styles.productImage}
+          />
+        </div>
+        <div className={styles.wrapperName}>
+          <p className={styles.productName}>{name}</p>
+          <div className={styles.iconInfo}>
+            <InformationIcon width={24} />
+            <span className={styles.tooltipText}>{tooltip}</span>
+          </div>
+        </div>
+        <div className={styles.flexRow}></div>
+      </>
       <Link href={link} target="_blank">
         <Button text="Tìm hiểu thêm" className={styles.productButton} />
       </Link>

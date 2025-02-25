@@ -3,17 +3,22 @@
 .container {
   width: 100%;
   height: auto;
-  margin-top: 90px;
+  margin-top: 95px;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  .loadingBanner {
+    width: 100%;
+    padding: 24px;
+    background-color: $black_03;
+  }
   .loading {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 40px;
+    margin: 20px 0;
   }
   .content {
     margin: 20px 0;
@@ -43,7 +48,8 @@
       display: flex;
       flex-wrap: wrap;
       height: auto;
-      gap: 24px;
+      justify-content: flex-start;
+      gap: 18px;
       justify-content: center;
       background-color: #fdeaf4;
     }
@@ -70,13 +76,21 @@
 
 @media (max-width: 1024px) {
   .container {
+    margin-top: 100px;
     .reviewContainer {
       padding: 12px 0;
       h2 {
         font-size: 1.5rem;
       }
+
       .previewVideo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         padding: 24px;
+        > iframe {
+          width: 100%;
+          height: 300px;
+        }
       }
     }
     .productContainer {
@@ -99,11 +113,11 @@
         }
       }
       .previewVideo {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 24px;
         > iframe {
           width: 100%;
           height: 300px;
-          margin: 16px 0;
         }
       }
     }

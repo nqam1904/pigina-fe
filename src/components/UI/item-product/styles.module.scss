@@ -10,18 +10,68 @@
   flex-direction: column;
   padding: 16px;
   cursor: pointer;
-  .flexRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .wrapperName {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     .productName {
       color: $primary;
+      display: inline-block;
       font-size: 18px;
       line-height: 20px;
       font-weight: 500;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .iconInfo {
+      position: relative;
+      display: inline-block;
+
+      &:hover .tooltipText {
+        visibility: visible;
+      }
+
+      .tooltipText {
+        visibility: hidden;
+        width: 200px;
+        background-color: $white;
+        overflow: hidden;
+        color: $black_17;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 1px solid $black_06;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: $black_06 transparent transparent transparent;
+        }
+      }
     }
   }
+
   .badgeProduct {
     background: $orange_03;
     color: $white;
@@ -29,16 +79,30 @@
     border-radius: 5px;
     font-size: 14px;
     margin-bottom: 10px;
+    z-index: 1;
+    position: absolute;
   }
-  .productImage {
+
+  .wrapperImage {
     width: 100%;
-    height: auto;
-    aspect-ratio: 256 / 256;
-    object-fit: contain;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid $black_06;
+    transition: all 0.4s ease-out;
+    .productImage {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 256 / 256;
+      object-fit: contain;
+    }
   }
+
   .productButton {
     height: 24px;
     font-size: 16px;
     padding: 16px;
+    width: 100%;
+    border-radius: 16px;
   }
 }

@@ -6,7 +6,27 @@
   overflow: hidden;
   position: relative;
   aspect-ratio: 1785/638;
+  &:hover {
+    > .btnContainer {
+      opacity: 1;
+    }
 
+    > .prevSlide {
+      left: 24px;
+    }
+
+    > .nextSlide {
+      right: 24px;
+    }
+
+    // > .slide {
+    //   > div {
+    //     > img {
+    //       transform: scale(1.05);
+    //     }
+    //   }
+    // }
+  }
   .btnContainer {
     position: absolute;
     z-index: 2;

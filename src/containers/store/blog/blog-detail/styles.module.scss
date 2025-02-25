@@ -3,13 +3,12 @@
 .container {
   width: 100%;
   height: auto;
-  margin-top: 90px;
-  margin-bottom: 140px;
+  margin: 95px auto;
 
   .containerContent {
     width: 1200px;
     display: flex;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 0 48px;
     flex-direction: column;
   }
@@ -34,11 +33,17 @@
 }
 @media (max-width: 1024px) {
   .container {
-    margin-top: 90px;
+    margin: 110px auto;
     .containerContent {
       width: 100%;
       margin: 20px auto;
       padding: 16px 24px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 95px auto;
   }
 }

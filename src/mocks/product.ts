@@ -1,83 +1,94 @@
 const dataProduct = [
   {
     id: 1,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ giới Pigina – Pigina Intimate Probiotics For Women (30 viên x 3)",
+    image: "/images/product/product1.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)
+`,
   },
   {
     id: 2,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)",
+    image: "/images/product/product2.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 3,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Hộp lẻ 6 viên đặt tái tạo tế bào PIGINA",
+    image: "/images/product/product3.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 4,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Set tối ưu 18 viên đặt tái tạo tế bào PIGINA",
+    image: "/images/product/product4.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 5,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Dung dịch vệ tái tạo tế bào PIGINA chai 150ml",
+    image: "/images/product/product5.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 6,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Dung dịch vệ sinh tái tạo tế bào Pigina gói 5ml",
+    image: "/images/product/product6.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 7,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Viên uống bổ sung nội tiết tố nữ Ostara Spring",
+    image: "/images/product/product7.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
   {
     id: 8,
-    name: "Product ABC 2025 Lorem Ipsum",
-    image:
-      "https://res.cloudinary.com/dgmf2ezwo/image/upload/v1739686788/VivobookS14FHDB_nolvka.jpg",
+    name: "Gel Massage đa công dụng Pigina",
+    image: "/images/product/product8.png",
     link: "https://google.com",
-    badge: "Bán chạy nhất",
-    tooltip:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    badge: "",
+    tooltip: `Thực phẩm bảo vệ sức khoẻ – Viên uống bổ sung lợi khuẩn cho nữ Pigina – Pigina Intimate Probiotics For Women (30 viên)`,
   },
 ];
-export { dataProduct };
+const dataProduct2 = [
+  {
+    id: 1,
+    name: "Sữa tắm gội toàn thân PIGINA dịu nhẹ cho bé Pigina Baby Wash & Shampoo_50ml",
+    image: "/images/product/product_2_1.png",
+    link: "https://google.com",
+    badge: "",
+    tooltip: `Sữa Tắm Gội Dịu Nhẹ Cho Bé Pigina Baby Wash & Shampoo dạng gel trong suốt`,
+  },
+  {
+    id: 2,
+    name: "Sữa tắm gội toàn thân PIGINA dịu nhẹ cho bé Pigina Baby Wash & Shampoo_350ml",
+    image: "/images/product/product_2_2.png",
+    link: "https://google.com",
+    badge: "",
+    tooltip: `Sữa Tắm Gội Dịu Nhẹ Cho Bé Pigina Baby Wash & Shampoo dạng gel trong suốt`,
+  },
+  {
+    id: 3,
+    name: "Sữa tắm gội toàn thân PIGINA dịu nhẹ cho bé Pigina Baby Wash & Shampoo_150ml",
+    image: "/images/product/product_2_3.png",
+    link: "https://google.com",
+    badge: "",
+    tooltip: `Sữa Tắm Gội Dịu Nhẹ Cho Bé Pigina Baby Wash & Shampoo dạng gel trong suốt`,
+  },
+];
+export { dataProduct, dataProduct2 };
