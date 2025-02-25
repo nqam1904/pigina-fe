@@ -2,13 +2,13 @@
 
 import { getReview } from "@/actions/reviewApi";
 import Rating from "@/components/UI/rating";
+import { SK_Box } from "@/components/UI/skeleton";
 import { CONFIG } from "@/config-global";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import styles from "./styles.module.scss";
-import { SK_Box } from "@/components/UI/skeleton";
 
 const SliderReview: React.FC = () => {
   const settings = {
@@ -26,8 +26,8 @@ const SliderReview: React.FC = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           dots: true,
           centerPadding: "40px",
         },

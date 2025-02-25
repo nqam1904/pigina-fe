@@ -50,55 +50,6 @@
       font-size: 1.8rem;
       line-height: 2.1rem;
     }
-
-    .optionsProductSection {
-      .btnInstallment {
-        padding: 6px;
-
-        .titleInstallment {
-          font-size: 1.4rem;
-        }
-
-        .descInstallment {
-          font-size: 1.2rem;
-        }
-
-        .titleCreditCard {
-          margin: 15px 0;
-        }
-      }
-
-      .buttonSecondary {
-        padding: 6px;
-
-        .titleButton {
-          font-size: 1.4rem;
-        }
-
-        .descriptionButton {
-          font-size: 1.2rem;
-        }
-      }
-
-      .buttonBuyNow {
-        .titleBuyNow {
-          font-size: 1.4rem;
-        }
-
-        .descriptionBuyNow {
-          font-size: 1.2rem;
-        }
-
-        .showPhone {
-          font-size: 1.3rem;
-          margin: 15px 0 !important;
-        }
-      }
-    }
-
-    .price {
-      font-size: 2.6rem;
-    }
   }
 }
 
@@ -107,61 +58,6 @@
     > h1 {
       font-size: 1.6rem;
       line-height: 2.4rem;
-    }
-
-    .price {
-      font-size: 2.6rem;
-    }
-
-    .optionsProductSection {
-      .btnInstallment {
-        padding: 6px;
-
-        .titleInstallment {
-          font-size: 1.4rem;
-        }
-
-        .descInstallment {
-          font-size: 1.1rem;
-        }
-
-        .titleCreditCard {
-          margin: 15px 0;
-        }
-      }
-
-      .buttonSecondary {
-        padding: 6px;
-
-        .titleButton {
-          font-size: 1.3rem;
-        }
-
-        .descriptionButton {
-          font-size: 1.1rem;
-        }
-      }
-
-      .buttonBuyNow {
-        .titleBuyNow {
-          font-size: 1.3rem;
-        }
-
-        .descriptionBuyNow {
-          font-size: 1.1rem;
-        }
-
-        .showPhone {
-          font-size: 1.3rem;
-          margin: 15px 0;
-        }
-      }
-    }
-
-    .addToCartSection {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10px;
     }
   }
 }

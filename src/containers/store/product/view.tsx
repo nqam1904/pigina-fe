@@ -90,7 +90,7 @@ function ProductView() {
             <div className={styles.specification}>
               <h2>Mô tả</h2>
               <div
-                className={styles.contentDescription}
+                className={`${styles.contentDescription} ck-content`}
                 dangerouslySetInnerHTML={{ __html: product?.description || "" }}
               />
 

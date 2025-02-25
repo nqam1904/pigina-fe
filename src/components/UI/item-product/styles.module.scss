@@ -21,7 +21,7 @@
     .productName {
       color: $primary;
       display: inline-block;
-      font-size: 18px;
+      font-size: 1rem;
       line-height: 20px;
       font-weight: 500;
       overflow: hidden;
@@ -29,44 +29,9 @@
       -webkit-line-clamp: 3;
       line-clamp: 3;
       -webkit-box-orient: vertical;
+      margin: 16px 0;
       &:hover {
         text-decoration: underline;
-      }
-    }
-    .iconInfo {
-      position: relative;
-      display: inline-block;
-
-      &:hover .tooltipText {
-        visibility: visible;
-      }
-
-      .tooltipText {
-        visibility: hidden;
-        width: 200px;
-        background-color: $white;
-        overflow: hidden;
-        color: $black_17;
-        text-align: center;
-        font-size: 14px;
-        border-radius: 6px;
-        border: 1px solid $black_06;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -60px;
-        &:after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: $black_06 transparent transparent transparent;
-        }
       }
     }
   }
@@ -105,8 +70,24 @@
     border-radius: 16px;
   }
 }
+@media (max-width: 1024px) {
+  .product {
+    .wrapperName {
+      .productName {
+        font-size: 16px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .product {
     width: calc((100vw - 32px - 16px) / 2);
+    .wrapperName {
+      .productName {
+        font-size: 16px;
+        margin: 20px 0;
+      }
+    }
   }
 }

@@ -94,6 +94,7 @@
           font-family: "Raleway", "Helvetica", sans-serif;
           line-height: 1.4;
         }
+
         .listProduct {
           max-width: 1200px;
           margin: 0 auto;
@@ -101,6 +102,7 @@
           grid-template-columns: repeat(4, 1fr);
           gap: 16px;
         }
+
         .loading {
           width: 100%;
           display: flex;

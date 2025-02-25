@@ -6,6 +6,7 @@ import { isEmpty } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Tooltip } from "react-tooltip";
 import Button from "../button";
 import styles from "./styles.module.scss";
 
@@ -38,11 +39,20 @@ function ItemProduct(props: ItemProductProps) {
           />
         </div>
         <div className={styles.wrapperName}>
-          <p className={styles.productName}>{title}</p>
-          <div className={styles.iconInfo}>
+          <Link href={`/san-pham/${slug}`} className={styles.productName}>
+            {title}
+          </Link>
+          <a
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content={tooltip}
+            data-tooltip-variant="error"
+          >
             <InformationIcon width={24} />
-            <span className={styles.tooltipText}>{tooltip}</span>
-          </div>
+          </a>
+          <Tooltip
+            id="my-tooltip"
+            style={{ backgroundColor: "#007aff", color: "#FFFFFF" }}
+          />
         </div>
         <div className={styles.flexRow}></div>
       </>

@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./globals.scss";
+import "react-tooltip/dist/react-tooltip.css";
 
 import ProgressBar from "@/components/UI/progress-bar";
 import { CONFIG } from "@/config-global";

@@ -9,7 +9,7 @@ const ProductBoard = ({ boardData }: any) => {
     <div className={styles.productBoard}>
       <h1>{title}</h1>
       <span
-        className={styles.shortDesc}
+        className={`${styles.shortDesc} ck-content`}
         dangerouslySetInnerHTML={{ __html: introduction }}
       ></span>
       <p className={styles.category}>

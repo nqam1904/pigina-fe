@@ -40,8 +40,6 @@ const CategoryView = () => {
       setProductList(product.payload?.data || []);
     } catch (error) {
       console.log(error);
-    } finally {
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
