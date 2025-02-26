@@ -126,6 +126,39 @@ a {
   border: none !important;
 }
 
+.ck-content iframe {
+  width: 100% !important;
+}
+
+.ck-content button {
+  display: flex; // Enables flexbox
+  align-items: center; // Centers text vertically
+  justify-content: center; // Centers text horizontally
+  height: 48px; // Adjust height as needed
+  min-width: 64px;
+  color: $white;
+  transition: background-color 0.3s;
+  user-select: none;
+  text-align: center; // Ensures text is centered inside button
+  padding: 5px 24px;
+  background-color: #61549e;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50px;
+  border: 0;
+  &:hover {
+    background-color: $pink_06;
+  }
+  &:active {
+    background-color: $pink_06;
+  }
+  &:disabled {
+    cursor: default;
+    background-color: nth($color-light, 3);
+  }
+}
+
 @media (min-width: 1440px) {
   .storeContainer {
     max-width: 1440px;
