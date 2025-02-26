@@ -1,7 +1,8 @@
-"use client";
-
+import { Metadata } from "next";
 import styles from "./page.module.scss";
-
+export const metadata: Metadata = {
+  title: "Chính sách đổi/trả hàng và hoàn tiền",
+};
 const Page = () => {
   return (
     <div className={`${styles.container} storeContainer`}>
