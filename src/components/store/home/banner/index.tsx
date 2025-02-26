@@ -15,7 +15,7 @@ const Banner: React.FC<IProps> = (props: IProps) => {
 
   const handleDataCate = () => {
     if (data.length > 0) {
-      setCategory(dataThumbnail);
+      setCategory(data);
     } else {
       setCategory(dataThumbnail);
     }
@@ -28,11 +28,11 @@ const Banner: React.FC<IProps> = (props: IProps) => {
   const renderBanner = (item: any, index: number) => {
     const photo =
       item?.banner?.length > 0
-        ? `${CONFIG.assetsDir}${item?.banner?.[0]?.url}`
+        ? `${CONFIG.assetsDir}${item?.cover?.url}`
         : item?.url;
 
     return (
-      <Link href={`/${item.slug}`} className={styles.wraperBanner} key={index}>
+      <div className={styles.wraperBanner} key={index}>
         <Image
           src={photo}
           alt="banner"
@@ -42,13 +42,15 @@ const Banner: React.FC<IProps> = (props: IProps) => {
           priority
           className={styles.imageBanner}
         />
-        <p
-          className={styles.bannerText}
-          style={index === 1 ? { color: "#ffe066" } : {}}
-        >
-          {item.title}
-        </p>
-      </Link>
+        <Link href={`/${item.slug}`}>
+          <p
+            className={styles.bannerText}
+            style={index === 1 ? { color: "#ffe066" } : {}}
+          >
+            {item.title}
+          </p>
+        </Link>
+      </div>
     );
   };
   return <>{category.map((item, index) => renderBanner(item, index))}</>;

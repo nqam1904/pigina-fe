@@ -15,7 +15,7 @@ const SlickSlider: React.FC<SlickSlideProps> = ({ setting, children }) => {
     slidesToScroll: 3,
     centerPadding: "60px",
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     speed: 500,
     dots: true,
     arrows: true,
