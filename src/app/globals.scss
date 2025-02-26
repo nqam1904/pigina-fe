@@ -20,19 +20,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica-Bold.ttf") format(".ttf");
-  font-weight: 700;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica.ttf") format(".ttf");
-  font-weight: 400;
-  font-style: normal;
-}
 
 ::-webkit-scrollbar {
   height: 6px;
@@ -67,7 +54,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Raleway", "Helvetica", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
