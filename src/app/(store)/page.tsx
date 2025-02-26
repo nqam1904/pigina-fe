@@ -1,4 +1,5 @@
 import { getBanner } from "@/actions/bannerApi";
+import { getListCategory } from "@/actions/categoriesApi";
 import Banner from "@/components/store/home/banner";
 import SliderReview from "@/components/store/home/slider-review";
 import Slider from "@/components/UI/slider";
@@ -9,8 +10,9 @@ export const metadata: Metadata = {
   title: "Pigina",
 };
 
-const Home = async () => {
+async function Home() {
   const { payload } = await getBanner();
+  const listCate = await getListCategory();
   const dataSlider = payload?.data || [];
   return (
     <div className={styles.homePage}>
@@ -18,7 +20,7 @@ const Home = async () => {
         <Slider data={dataSlider} type="api" />
       </div>
       <section className={styles.thumbnailContainer}>
-        <Banner />
+        <Banner data={listCate.payload?.data || []} />
       </section>
       <section className={styles.reviewContainer}>
         <h2>Cảm nhận khách hàng</h2>
@@ -26,5 +28,5 @@ const Home = async () => {
       </section>
     </div>
   );
-};
+}
 export default Home;
