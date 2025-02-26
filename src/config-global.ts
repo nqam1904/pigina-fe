@@ -18,7 +18,7 @@ export const CONFIG: ConfigValue = {
   appName: "Pigina Korea",
   isStaticExport: process.env.NEXT_PUBLIC_STATIC_EXPORT === "true",
   appVersion: packageJson.version,
-  baseUrl: process.env.BASE_URL ?? "",
+  baseUrl: process.env.BASE_URL ?? "https://pigina-fe.vercel.app",
   serverUrl: process.env.NEXT_PUBLIC_SERVER_URL ?? "https://pigina.com.vn/api",
   assetsDir: process.env.NEXT_PUBLIC_ASSETS_DIR ?? "https://pigina.com.vn",
   nodeEnv: process.env.ENV ?? "",

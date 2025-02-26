@@ -1,7 +1,8 @@
+import "react-tooltip/dist/react-tooltip.css";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import "./ckeditor.css";
 import "./globals.scss";
-import "react-tooltip/dist/react-tooltip.css";
 
 import ProgressBar from "@/components/UI/progress-bar";
 import { CONFIG } from "@/config-global";
@@ -59,11 +60,6 @@ export default async function RootLayout({
       suppressHydrationWarning={false}
       className={`${myFont.variable}`}
     >
-      <link
-        rel="stylesheet"
-        href="https://cdn.ckeditor.com/ckeditor5/44.2.0/ckeditor5.css"
-      />
-
       <body suppressHydrationWarning={false}>
         {/* <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}> */}
         <ProgressBar />

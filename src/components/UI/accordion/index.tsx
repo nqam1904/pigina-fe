@@ -10,12 +10,7 @@ type AccordionProps = {
 function Accordion(props: AccordionProps) {
   const [active, setActive] = useState(false);
   const content = useRef<any | null>(null);
-  const [height, setHeight] = useState("0px");
-
-  //   useEffect(() => {
-  //     console.log("Height for ", props.title, ": ", height);
-  //   }, [height]);
-
+  const [height, setHeight] = useState("0px"); 
   function toggleAccordion() {
     setActive(!active);
     setHeight(active ? "0px" : `${content.current.scrollHeight}px`);
@@ -31,7 +26,6 @@ function Accordion(props: AccordionProps) {
           className={`${styles.accordionBorder} ${active ? styles.active : ""}`}
         >
           <p className={styles.accordionTitle}>{props?.title || ""}</p>
-          {/* <span style={{ marginLeft: "20px" }}>{active ? "-" : "+"}</span> */}
           <ArrowIconAccordion width={24} />
         </div>
       </div>
@@ -41,7 +35,7 @@ function Accordion(props: AccordionProps) {
         className={styles.accordionContent}
       >
         <div
-          className={styles.accordionText}
+          className={`${styles.accordionText} ck-content`}
           dangerouslySetInnerHTML={{ __html: props?.content || "" }}
         />
       </div>
