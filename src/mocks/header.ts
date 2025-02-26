@@ -7,12 +7,12 @@ const listHeader = [
       {
         id: 0,
         title: "Câu chuyện nhãn hàng",
-        link: "/cau-chuyen-nhan-hang",
+        link: "about/cau-chuyen-nhan-hang",
       },
       {
         id: 1,
         title: "Tầm nhìn & sứ mệnh",
-        link: "/tam-nhin-su-menh",
+        link: "about/tam-nhin-su-menh",
       },
     ],
   },

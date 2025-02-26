@@ -5,4 +5,5 @@ export const endpoints = {
   blog: "/blogs?populate=*",
   categories: "/categories?populate=*",
   products: "/products?populate=*",
+  abouts: "/abouts?populate=*",
 };

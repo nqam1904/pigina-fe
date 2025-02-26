@@ -51,7 +51,11 @@ function ItemProduct(props: ItemProductProps) {
           </a>
           <Tooltip
             id="my-tooltip"
-            style={{ backgroundColor: "#007aff", color: "#FFFFFF" }}
+            style={{
+              backgroundColor: "#007aff",
+              color: "#FFFFFF",
+              width: "100%",
+            }}
           />
         </div>
         <div className={styles.flexRow}></div>
