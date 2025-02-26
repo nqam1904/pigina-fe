@@ -40,13 +40,13 @@ const dataThumbnail = [
     id: 0,
     slug: "danh-cho-nang",
     url: "/images/thumbnail_1.png",
-    button: "Dành cho nàng",
+    title: "Dành cho nàng",
   },
   {
     id: 1,
     slug: "danh-cho-be",
     url: "/images/thumbnail_2.png",
-    button: "Dành cho bé",
+    title: "Dành cho bé",
   },
 ];
 

@@ -99,12 +99,27 @@ const fakeApiCall = (
   });
 };
 
+async function fetchImageUrl(url: string, defaultImage: string) {
+  try {
+    const response = await fetch(url, { method: "HEAD" });
+    if (
+      response.ok &&
+      response.headers.get("Content-Type")?.startsWith("image")
+    ) {
+      return url;
+    }
+  } catch (error) {
+    console.error("Error fetching image:", error);
+  }
+  return defaultImage;
+}
 export {
   capitalizeFirstLetter,
   convertListToDropdownList,
+  fakeApiCall,
   formatDate,
   formatDateTime,
   generateRandomString,
   isEmptyObject,
-  fakeApiCall,
+  fetchImageUrl,
 };
