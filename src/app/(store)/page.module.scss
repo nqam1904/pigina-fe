@@ -4,6 +4,11 @@
   width: 100%;
   background-color: $white;
 
+  .loadingBanner {
+    width: 100%;
+    padding: 24px;
+    background-color: $black_03;
+  }
   .heroContainer {
     display: flex;
     width: 100%;
@@ -15,6 +20,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .loaddingSection {
+      width: 100%;
+      margin: 16px 16px 0;
+      padding: 16px;
+      background-color: $black_03;
+    }
   }
 
   .reviewContainer {

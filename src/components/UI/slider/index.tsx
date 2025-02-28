@@ -12,7 +12,7 @@ type SliderProps = {
   type?: "api" | "local";
 };
 const Slider: React.FC<SliderProps> = (props) => {
-  const { data, type = "local" } = props;
+  const { data = [], type = "local" } = props;
   const [activeSlideNum, setActiveSlideNum] = useState(0);
   const touchPos = {
     start: 0,

@@ -17,13 +17,13 @@ function AboutView() {
     try {
       let listBanner: any = [];
       // GET CATEGORY
-      const aboutResponse = await getAbout(slug);
-      setData(aboutResponse.payload.data[0]);
-      if (aboutResponse.payload.data[0]?.banner) {
-        aboutResponse.payload.data[0]?.banner.map((item: any) => {
+      const aboutResponse = await getAbout("");
+      setData(aboutResponse.payload?.data?.[0] || null);
+      if (aboutResponse.payload?.data[0]?.banner) {
+        aboutResponse.payload?.data[0]?.banner.map?.((item: any) => {
           listBanner.push({
-            id: item.id,
-            image: { url: item.url },
+            id: item.id || "",
+            image: { url: item?.url || "" },
           });
         });
       }
@@ -49,7 +49,7 @@ function AboutView() {
           </div>
         </React.Fragment>
       )}
-      {data ? <Breadcrumb slug={data?.title} /> : <div />}
+      {data ? <Breadcrumb slug={data?.title || ""} /> : <div />}
       <div className="storeContainer">
         {data ? (
           <div
